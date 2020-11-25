@@ -9,5 +9,5 @@
 ![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=devel)
 
 ## Bug-Fixing
-![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=bug-fixing)
+![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=bug_fixing)
 
