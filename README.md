@@ -2,21 +2,12 @@
 
 > An simple application to create a very kind responses for better every day expirience.
 
-## Build Setup
+## Master
+![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=master)
 
-```bash
-# install dependencies
-$ npm install
+## Devel
+![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=devel)
 
-# serve with hot reload at localhost:3000
-$ npm run dev
+## Bug-Fixing
+![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=bug-fixin)
 
-# build for production and launch server
-$ npm run build
-$ npm run start
-
-# generate static project
-$ npm run generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
