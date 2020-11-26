@@ -53,4 +53,4 @@ module.exports = {
     extend(_config, _ctx) {
     }
   }
-}
+};
