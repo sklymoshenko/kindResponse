@@ -7,7 +7,6 @@
 
 ## Devel
 ![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=devel)
+![Netlify Status](https://api.netlify.com/api/v1/badges/d4f51ff0-4647-4b61-b3ef-f841bac22b2a/deploy-status)
 
-## Bug-Fixing
-![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=bug_fixing)
 
