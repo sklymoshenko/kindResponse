@@ -1,15 +1,14 @@
 <template>
-  <span class="flex flex-col justify-center items-center">
-    <img src="../static/undraw_share_opinion_jpw0.svg" alt="#" class="w-6/12">
-    <span class="flex items-end w-4/5 justify-evenly">
-      <p class="font-primary">
-        Free kind responses for everybody
+  <span class="flex flex-col justify-center items-center mt-12">
+    <span class="flex items-end">
+      <p class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1">
+        Kind responses for everybody
       </p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 20 20"
         fill="currentColor"
-        class="stroke-current text-danger w-8"
+        class="icon-test stroke-current text-danger w-8"
       >
         <path
           fill-rule="evenodd"
@@ -25,7 +24,7 @@
 import Vue from "vue";
 
 export default Vue.extend({
-  name: "Logo"
+  name: "MainTitle"
 });
 </script>
 

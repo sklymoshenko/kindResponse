@@ -5,5 +5,5 @@
 @import "tailwindcss/utilities";
 
 .container {
-  @apply flex justify-center items-center text-center mx-auto;
+  @apply flex justify-center items-center text-center mx-auto flex-col;
 };
