@@ -1,5 +1,5 @@
 <template>
-  <div class="flex mx-auto bg-shade h-64 w-4/5 z-10 origin-center" />
+  <div class="started-test flex mx-auto bg-shade h-64 w-4/5 z-10 origin-center" />
 </template>
 
 <script lang="ts">
