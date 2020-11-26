@@ -12,7 +12,12 @@ module.exports = {
       { hid: "description", name: "description", content: process.env.npm_package_description || "" }
     ],
     link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" }
+      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Roboto&display=swap"
+      }
     ]
   },
   /*
