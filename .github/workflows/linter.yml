@@ -6,10 +6,12 @@ on:
     branches:
       - master
       - devel
+      - bug_fixing
   push:
     branches:
       - master
       - devel
+      - bug_fixing
 
 jobs:
   # Set the job key. The key is displayed as the job name
