@@ -1,4 +1,4 @@
-name: Module tests
+name: Jest tests
 
 # Run this workflow every time a new commit pushed to your repository
 on:
@@ -18,7 +18,7 @@ jobs:
   # when a job name is not provided
   Lint:
     # Name the Job
-    name: Module tests
+    name: Jest tests
     # Set the type of machine to run on
     runs-on: ubuntu-latest
 
@@ -47,6 +47,5 @@ jobs:
         run: npm install
       - name: Module tests
         run: npm run test:module
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Snapshot tests
+        run: npm run test:snapshot
