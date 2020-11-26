@@ -3,3 +3,7 @@
 @import "tailwindcss/components";
 /* purgecss end ignore */
 @import "tailwindcss/utilities";
+
+.container {
+  @apply flex justify-center items-center text-center mx-auto;
+};
