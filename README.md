@@ -4,7 +4,7 @@
 
 ## Master
 ![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=master)
-
+![Module tests](https://github.com/xxxsssxxx/kindResponse/workflows/Module%20tests/badge.svg?branch=master)
 ## Devel
 ![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=devel)
 ![Module tests](https://github.com/xxxsssxxx/kindResponse/workflows/Module%20tests/badge.svg)
