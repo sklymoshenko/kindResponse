@@ -11,7 +11,8 @@
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
     "test:module": "jest --testMatch='**/test/module/**/*.spec.(js|jsx|ts|tsx)' --coverage --colors --no-cache --coverageReporters='text' --coverageReporters='text-summary'",
-    "test:snapshot": "jest --testMatch='**/test/snapshot/**/*.spec.(js|jsx|ts|tsx)'"
+    "test:snapshot": "jest --testMatch='**/test/snapshot/**/*.spec.(js|jsx|ts|tsx)'",
+    "test:snapshot-update": "jest --testMatch='**/test/snapshot/**/*.spec.(js|jsx|ts|tsx)' --updateSnapshot"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
