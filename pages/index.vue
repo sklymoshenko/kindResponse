@@ -1,30 +1,19 @@
 <template>
-  <div class="container">
-    <Logo />
+  <div class="container h-screen">
+    <MainTitle />
+    <GetStarted />
   </div>
 </template>
 
 <script lang="ts">
 import Vue from "vue";
-import Logo from "../components/Logo.vue";
+import MainTitle from "../components/MainTitle.vue";
+import GetStarted from "~/components/GetStarted.vue";
 export default Vue.extend({
   name: "Index",
-  components: { Logo }
+  components: { MainTitle, GetStarted }
 });
 </script>
 
 <style>
-/* Sample `apply` at-rules with Tailwind CSS
-.container {
-  @apply min-h-screen flex justify-center items-center text-center mx-auto;
-}
-*/
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
 </style>

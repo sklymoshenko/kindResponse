@@ -15,6 +15,16 @@ module.exports = {
     fontFamily: {
       primary: ["Roboto", "ui-sans-serif"],
       titles: ["'Playfair Display'"]
+    },
+    inset: {
+      0: 0,
+      auto: "auto",
+      1: "1rem",
+      2: "2rem",
+      3: "3rem",
+      4: "4rem",
+      5: "5rem",
+      15: "15rem"
     }
   },
   variants: {},
