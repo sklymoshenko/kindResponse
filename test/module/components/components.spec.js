@@ -6,7 +6,7 @@ describe("Module tests", () => {
   describe("Get Started", () => {
     const wrapper = mount(GetStarted);
     test("Should create a a vue instance", () => {
-      expect(wrapper.vm).toBeTruthy();
+      expect(wrapper.vm).not.toBeTruthy();
     });
     test("Has main div", () => {
       expect(wrapper.find(".started-test").element).toBeDefined();
