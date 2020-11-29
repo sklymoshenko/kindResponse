@@ -3,9 +3,9 @@
     class="started-test flex mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
   >
     <div class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto">
-      <BaseAttribute label="From" type="input" placeholder="Mike" />
-      <BaseAttribute label="To" type="input" placeholder="My lovely Boss" />
-      <BaseAttribute label=" Category" type="BaseSelect" />
+      <BaseAttribute label="From" type="text" placeholder="Mike" />
+      <BaseAttribute label="To" type="text" placeholder="My lovely Boss" />
+      <BaseAttribute label=" Category" type="select" />
       <button
         type="submit"
         class="group transition duration-150 ease-in-out relative w-full mt-5 shadow-sm flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-secondary lg:hover:bg-secondary-hovered lg:active:bg-secondary-hovered focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ac"
@@ -31,13 +31,19 @@
   </div>
 </template>
 <script lang="ts">
-import Vue from "vue";
-import BaseAttribute from "@/components/Base/BaseAttribute.vue";
+import {
+  Component,
+  Vue
+} from "nuxt-property-decorator";
 
-export default Vue.extend({
-  name: "GetStarted",
-  components: { BaseAttribute }
-});
+import BaseAttribute from "@/components/Base/BaseAttribute.vue";
+@Component({
+  components: {
+    BaseAttribute
+  }
+})
+export default class GetStarted extends Vue {
+};
 </script>
 
 <style></style>

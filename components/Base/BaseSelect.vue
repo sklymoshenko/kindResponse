@@ -106,9 +106,12 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: "BaseSelect"
+<script lang="ts">
+import {
+  Vue
+} from "nuxt-property-decorator";
+
+export default class BaseSelect extends Vue {
 };
 </script>
 

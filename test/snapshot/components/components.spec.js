@@ -32,6 +32,14 @@ describe("Snapshot tests", () => {
       test("Renders correctly", () => {
         expect(wrapper.element).toMatchSnapshot();
       });
+      test("Renders correctly with another type", async() => {
+        await wrapper.setProps({ type: "select" });
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Renders correctly with default type", async() => {
+        await wrapper.setProps({ type: "" });
+        expect(wrapper.element).toMatchSnapshot();
+      });
     });
     describe("Select", () => {
       const wrapper = mount(BaseSelect);

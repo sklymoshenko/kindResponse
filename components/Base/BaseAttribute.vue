@@ -16,49 +16,43 @@
   </div>
 </template>
 
-<script lang>
-import Vue from "vue";
-import BaseSelect from "@/components/Base/BaseSelect.vue";
+<script lang="ts">
+import {
+  Component,
+  Prop,
+  Provide,
+  Vue
+} from "nuxt-property-decorator";
 
-export default Vue.extend({
-  name: "BaseAttribute",
+import BaseSelect from "@/components/Base/BaseSelect.vue";
+import { ComponentsMap } from "@/interfaces/BaseInterfaces.ts";
+
+@Component({
   components: {
     BaseSelect
-  },
-  props: {
-    type: {
-      type: String,
-      default: "text",
-      required: true
-    },
-    placeholder: {
-      type: String,
-      default: () => ""
-    },
-    label: {
-      type: String,
-      default: "Lbl:"
-    }
-  },
-  data() {
-    return {
-      componentsMap: {
-        text: "input",
-        select: "BaseSelect"
-      }
-    };
-  },
-  computed: {
-    component() {
-      const type = this.type;
-      return this.componentsMap[type] || "input";
-    },
-    bordersClasses() {
-      const isTextInput = this.type === "text";
-      return isTextInput ? "border-b border-solid border-primary" : "";
-    }
-  },
-});
+  }
+})
+export default class BaseAttribute extends Vue {
+  @Prop({ type: String, default: "text", required: true }) type!: string;
+  @Prop({ type: String, default: "" }) placeholder!: string;
+  @Prop({ type: String, default: "Lbl" }) label!: string;
+
+  @Provide()
+  componentsMap: ComponentsMap = {
+    text: "input",
+    select: "BaseSelect"
+  };
+
+  get component(): string {
+    const type: string = this.type;
+    return this.componentsMap[type as keyof ComponentsMap] || "input";
+  };
+
+  get bordersClasses(): string {
+    const isTextInput: boolean = this.type === "text";
+    return isTextInput ? "border-b border-solid border-primary" : "";
+  }
+};
 </script>
 
 <style></style>
