@@ -25,7 +25,7 @@ describe("Snapshot tests", () => {
   });
   describe("Base components", () => {
     describe("Attribute", () => {
-      const wrapper = mount(BaseAttribute);
+      const wrapper = mount(BaseAttribute, { propsData: { type: "text" } });
       test("Should create a a vue instance", () => {
         expect(wrapper.vm).toBeTruthy();
       });
