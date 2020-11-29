@@ -1,16 +1,16 @@
 <template>
   <div
-    class="started-test flex mx-auto border-secondary border-solid border-2 h-64 w-4/5 z-10 origin-center"
+    class="started-test flex mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
   >
     <div class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto">
-      <BaseAttribute label=" From" />
-      <BaseAttribute label=" To" />
+      <BaseAttribute label="From" type="input" placeholder="Mike" />
+      <BaseAttribute label="To" type="input" placeholder="My lovely Boss" />
+      <BaseAttribute label=" Category" type="BaseSelect" />
       <button
         type="submit"
         class="group transition duration-150 ease-in-out relative w-full mt-5 shadow-sm flex justify-center py-2 px-4 border border-transparent text-sm font-medium rounded-md text-white bg-secondary lg:hover:bg-secondary-hovered lg:active:bg-secondary-hovered focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 ac"
       >
         <span class="absolute left-0 inset-y-0 flex items-center pl-3">
-          <!-- Heroicon name: lock-closed -->
           <svg
             class="h-5 w-5 text-white group-hover:text-white"
             xmlns="http://www.w3.org/2000/svg"

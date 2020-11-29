@@ -2,31 +2,96 @@
 
 exports[`Snapshot tests Get Started Renders correctly 1`] = `
 <div
-  class="started-test flex mx-auto border-secondary border-solid border-2 h-64 w-4/5 z-10 origin-center"
+  class="started-test flex mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
 >
   <div
     class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
   >
     <div
-      class="rounded-md shadow-md w-full my-2"
+      class="rounded-md w-full my-2 relative"
     >
+      <label
+        class="block text-sm font-medium text-gray-700 text-left pl-2"
+        id="listbox-label"
+      >
+        
+    From
+  
+      </label>
+       
       <input
-        class="focus:outline-none focus:ring focus:border-danger block w-full sm:text-lg border-gray-300 rounded-sm font-primary h-8 pl-2"
-        id=" From"
-        placeholder=" From"
-        type="text"
-      />
+        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2  ml-2"
+        id="From"
+        placeholder="Mike"
+      >
+        <option
+          disabled="disabled"
+          selected="selected"
+          value=""
+        >
+          
+      From
+    
+        </option>
+      </input>
     </div>
      
     <div
-      class="rounded-md shadow-md w-full my-2"
+      class="rounded-md w-full my-2 relative"
     >
+      <label
+        class="block text-sm font-medium text-gray-700 text-left pl-2"
+        id="listbox-label"
+      >
+        
+    To
+  
+      </label>
+       
       <input
-        class="focus:outline-none focus:ring focus:border-danger block w-full sm:text-lg border-gray-300 rounded-sm font-primary h-8 pl-2"
-        id=" To"
-        placeholder=" To"
-        type="text"
-      />
+        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2  ml-2"
+        id="To"
+        placeholder="My lovely Boss"
+      >
+        <option
+          disabled="disabled"
+          selected="selected"
+          value=""
+        >
+          
+      To
+    
+        </option>
+      </input>
+    </div>
+     
+    <div
+      class="rounded-md w-full my-2 relative"
+    >
+      <label
+        class="block text-sm font-medium text-gray-700 text-left pl-2"
+        id="listbox-label"
+      >
+        
+     Category
+  
+      </label>
+       
+      <input
+        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2  ml-2"
+        id=" Category"
+        placeholder=""
+      >
+        <option
+          disabled="disabled"
+          selected="selected"
+          value=""
+        >
+          
+       Category
+    
+        </option>
+      </input>
     </div>
      
     <button
