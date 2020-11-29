@@ -15,6 +15,10 @@ module.exports = {
     "^.+\\.js$": "babel-jest",
     ".*\\.(vue)$": "vue-jest"
   },
+  automock: false,
+  setupFiles: [
+    "./setupJest.js"
+  ],
   collectCoverage: true,
   collectCoverageFrom: [
     "<rootDir>/components/**/*.vue",

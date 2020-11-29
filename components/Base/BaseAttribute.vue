@@ -6,8 +6,10 @@
     <component
       :is="component"
       :id="label"
+      v-bind="$props"
       :class="`focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary ${textInputClasses}`"
       :placeholder="placeholder"
+      @option:select="optionSelected"
     >
       <option value="" disabled selected>
         {{ label }}
@@ -20,12 +22,12 @@
 import {
   Component,
   Prop,
-  Provide,
+  Emit,
   Vue
 } from "nuxt-property-decorator";
 
 import BaseSelect from "@/components/Base/BaseSelect.vue";
-import { ComponentsMap } from "@/interfaces/BaseInterfaces.ts";
+import { ComponentsMap, Category } from "@/interfaces/BaseInterfaces.ts";
 
 @Component({
   components: {
@@ -36,12 +38,18 @@ export default class BaseAttribute extends Vue {
   @Prop({ type: String, default: "text", required: true }) type!: string;
   @Prop({ type: String, default: "" }) placeholder!: string;
   @Prop({ type: String, default: "Lbl" }) label!: string;
+  @Prop({ type: Array, default: () => [{ name: "No options" }] })
+  options!: Category[];
 
-  @Provide()
   componentsMap: ComponentsMap = {
     text: "input",
     select: "BaseSelect"
   };
+
+  @Emit("option:select")
+  optionSelected(option: Category): Category {
+    return option;
+  }
 
   get component(): string {
     const type: string = this.type;
