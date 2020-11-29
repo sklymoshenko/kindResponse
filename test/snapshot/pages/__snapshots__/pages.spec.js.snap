@@ -52,7 +52,7 @@ exports[`Module tests Index Renders correctly 1`] = `
         </label>
          
         <input
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2 border-b border-solid border-primary ml-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
           id="From"
           placeholder="Mike"
         >
@@ -81,7 +81,7 @@ exports[`Module tests Index Renders correctly 1`] = `
         </label>
          
         <input
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2 border-b border-solid border-primary ml-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
           id="To"
           placeholder="My lovely Boss"
         >
@@ -110,7 +110,7 @@ exports[`Module tests Index Renders correctly 1`] = `
         </label>
          
         <div
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2  ml-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
           id=" Category"
           placeholder=""
         >

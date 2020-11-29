@@ -14,7 +14,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly 1`] = `
   </label>
    
   <input
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2 border-b border-solid border-primary ml-2"
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
     id="Lbl"
     placeholder=""
   >
@@ -45,7 +45,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly with another
   </label>
    
   <div
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2  ml-2"
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
     id="Lbl"
     placeholder=""
   >
@@ -164,7 +164,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly with default
   </label>
    
   <input
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2  ml-2"
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
     id="Lbl"
     placeholder=""
   >
@@ -303,7 +303,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
       </label>
        
       <input
-        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2 border-b border-solid border-primary ml-2"
+        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
         id="From"
         placeholder="Mike"
       >
@@ -332,7 +332,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
       </label>
        
       <input
-        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2 border-b border-solid border-primary ml-2"
+        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
         id="To"
         placeholder="My lovely Boss"
       >
@@ -361,7 +361,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
       </label>
        
       <div
-        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2  ml-2"
+        class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
         id=" Category"
         placeholder=""
       >
