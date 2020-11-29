@@ -6,7 +6,7 @@
     <component
       :is="component"
       :id="label"
-      :class="`focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary pl-2 ${bordersClasses} ml-2`"
+      :class="`focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary ${textInputClasses}`"
       :placeholder="placeholder"
     >
       <option value="" disabled selected>
@@ -48,9 +48,9 @@ export default class BaseAttribute extends Vue {
     return this.componentsMap[type as keyof ComponentsMap] || "input";
   };
 
-  get bordersClasses(): string {
+  get textInputClasses(): string {
     const isTextInput: boolean = this.type === "text";
-    return isTextInput ? "border-b border-solid border-primary" : "";
+    return isTextInput ? "border-b border-solid border-primary pl-2" : "";
   }
 };
 </script>

@@ -54,15 +54,15 @@ describe("Module tests", () => {
           expect(wrapper.vm.component).toEqual(expectedComponents[1]);
         });
       });
-      describe("bordersClasses", () => {
+      describe("textInputClasses", () => {
         test("is defined when type is 'text'", () => {
-          const border = wrapper.vm.bordersClasses;
-          expect(border).toBeDefined();
+          const classes = wrapper.vm.textInputClasses;
+          expect(classes).toBeDefined();
         });
         test("is not empty string when type is not 'text'", async() => {
           await wrapper.setProps({ type: "select" });
-          const border = wrapper.vm.bordersClasses;
-          expect(border).toBeFalsy();
+          const classes = wrapper.vm.textInputClasses;
+          expect(classes).toBeFalsy();
         });
       });
     });
