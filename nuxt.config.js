@@ -32,8 +32,7 @@ module.exports = {
   /*
   ** Plugins to load before mounting the App
   */
-  plugins: [
-  ],
+  plugins: ["@/directives/blurClosing.ts"],
   /*
   ** Nuxt.js dev-modules
   */
