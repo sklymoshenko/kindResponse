@@ -55,6 +55,12 @@ module.exports = {
     /*
     ** You can extend webpack config here
     */
+    babel: {
+      plugins: [
+        ["@babel/proposal-decorators", { legacy: true }],
+        ["@babel/proposal-class-properties", { loose: true }]
+      ],
+    },
     extend(_config, _ctx) {
     }
   }

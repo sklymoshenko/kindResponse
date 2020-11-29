@@ -1,6 +1,8 @@
 import { mount } from "@vue/test-utils";
 import GetStarted from "@/components/GetStarted.vue";
 import MainTitle from "@/components/MainTitle.vue";
+import BaseAttribute from "@/components/Base/BaseAttribute.vue";
+import BaseSelect from "@/components/Base/BaseSelect.vue";
 
 describe("Snapshot tests", () => {
   describe("Get Started", () => {
@@ -19,6 +21,34 @@ describe("Snapshot tests", () => {
     });
     test("Renders correctly", () => {
       expect(wrapper.element).toMatchSnapshot();
+    });
+  });
+  describe("Base components", () => {
+    describe("Attribute", () => {
+      const wrapper = mount(BaseAttribute, { propsData: { type: "text" } });
+      test("Should create a a vue instance", () => {
+        expect(wrapper.vm).toBeTruthy();
+      });
+      test("Renders correctly", () => {
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Renders correctly with another type", async() => {
+        await wrapper.setProps({ type: "select" });
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Renders correctly with default type", async() => {
+        await wrapper.setProps({ type: "" });
+        expect(wrapper.element).toMatchSnapshot();
+      });
+    });
+    describe("Select", () => {
+      const wrapper = mount(BaseSelect);
+      test("Should create a a vue instance", () => {
+        expect(wrapper.vm).toBeTruthy();
+      });
+      test("Renders correctly", () => {
+        expect(wrapper.element).toMatchSnapshot();
+      });
     });
   });
 });
