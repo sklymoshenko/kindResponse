@@ -5,6 +5,13 @@
 ## Master
 ![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=master)
 ![Jest tests](https://github.com/xxxsssxxx/kindResponse/workflows/Jest%20tests/badge.svg?branch=master)
+
+<img src="./test_results/lighthouse_performance.svg">
+<img src="./test_results/lighthouse_accessibility.svg">
+<img src="./test_results/lighthouse_best-practices.svg">
+<img src="./test_results/lighthouse_pwa.svg">
+<img src="./test_results/lighthouse_seo.svg">
+
 ## Devel
 ![Linter](https://github.com/xxxsssxxx/kindResponse/workflows/Linter/badge.svg?branch=devel)
 ![Jest tests](https://github.com/xxxsssxxx/kindResponse/workflows/Jest%20tests/badge.svg?branch=devel)
@@ -14,6 +21,6 @@
 <img src="./test_results/lighthouse_accessibility.svg">
 <img src="./test_results/lighthouse_best-practices.svg">
 <img src="./test_results/lighthouse_pwa.svg">
-<img src="./test_results/seo.svg">
+<img src="./test_results/lighthouse_seo.svg">
 
 
