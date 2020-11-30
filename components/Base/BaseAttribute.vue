@@ -9,7 +9,9 @@
       v-bind="$props"
       :class="`focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary ${textInputClasses}`"
       :placeholder="placeholder"
+      autocomplete="chrome-off"
       @option:select="optionSelected"
+      @input="handleInputChange"
     >
       <option value="" disabled selected>
         {{ label }}
@@ -49,6 +51,12 @@ export default class BaseAttribute extends Vue {
   @Emit("option:select")
   optionSelected(option: Category): Category {
     return option;
+  }
+
+  @Emit("input:changed")
+  handleInputChange(e: { target: HTMLInputElement }): string {
+    const input = e.target.value || "Mike";
+    return input;
   }
 
   get component(): string {

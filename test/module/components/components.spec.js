@@ -34,6 +34,16 @@ describe("Module tests", () => {
       await wrapper.vm.selectCategory(fetchedOptions[1]);
       expect(wrapper.vm.selectOptions[1].selected).toBe(true);
     });
+    test("'From' handler returns event data", async() => {
+      const from = "Kate";
+      const returned = await wrapper.vm.handleFromChange(from);
+      expect(returned).toEqual(from);
+    });
+    test("'To' handler returns event data", async() => {
+      const to = "Richard";
+      const returned = await wrapper.vm.handleToChange(to);
+      expect(returned).toEqual(to);
+    });
   });
 
   describe("Main Title", () => {
@@ -90,6 +100,23 @@ describe("Module tests", () => {
           await wrapper.setProps({ type: "select" });
           const classes = wrapper.vm.textInputClasses;
           expect(classes).toBeFalsy();
+        });
+      });
+      describe("'input:changed'", () => {
+        test("Typing to input emits event", async() => {
+          const value = "s";
+          await wrapper.setProps({ type: "text" });
+          const input = wrapper.find("input#Lbl");
+          await input.setValue(value);
+          expect(wrapper.emitted()["input:changed"]).toBeTruthy();
+          expect(wrapper.emitted()["input:changed"][0][0]).toEqual(value);
+        });
+        test("Return default if empty string", async() => {
+          const defaultInput = "Mike";
+          await wrapper.setProps({ type: "text" });
+          const input = wrapper.find("input#Lbl");
+          await input.setValue("");
+          expect(wrapper.emitted()["input:changed"][0][0]).toEqual(defaultInput);
         });
       });
     });

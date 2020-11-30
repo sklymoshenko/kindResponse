@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto">
-    <BaseAttribute label="From" type="text" placeholder="Mike" />
-    <BaseAttribute label="To" type="text" placeholder="My lovely Boss" />
+    <BaseAttribute label="From" type="text" placeholder="Mike" @input:changed="handleFromChange" />
+    <BaseAttribute label="To" type="text" placeholder="My lovely Boss" @input:changed="handleToChange" />
     <BaseAttribute
       label=" Category"
       type="select"
@@ -32,7 +32,7 @@
   </div>
 </template>
 <script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
+import { Component, Emit, Vue } from "nuxt-property-decorator";
 
 import BaseAttribute from "@/components/Base/BaseAttribute.vue";
 import { Category } from "@/interfaces/BaseInterfaces.ts";
@@ -53,6 +53,16 @@ export default class GetStarted extends Vue {
     const options: Category[] = await CategoryFetcher.getCategories();
     this.selectOptions = options;
     this.selectDefault();
+  }
+
+  @Emit("to:changed")
+  handleToChange(to: string): string {
+    return to;
+  }
+
+  @Emit("from:changed")
+  handleFromChange(from: string): string {
+    return from;
   }
 
   selectDefault() {

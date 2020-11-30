@@ -4,8 +4,8 @@
     <div
       class="started-test flex flex-col md:flex-row mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
     >
-      <GetStarted />
-      <Chat />
+      <GetStarted @from:changed="handleFromChange" @to:changed="handleToChange" />
+      <Chat :to="to" :from="from" />
     </div>
   </div>
 </template>
@@ -21,7 +21,16 @@ import Chat from "~/components/Chat.vue";
 })
 
 export default class Index extends Vue {
+  from: string = "Mike";
+  to: string = "My lovely Boss";
 
+  handleFromChange(from: string): void {
+    this.from = from;
+  }
+
+  handleToChange(to: string): void {
+    this.to = to;
+  }
 };
 </script>
 

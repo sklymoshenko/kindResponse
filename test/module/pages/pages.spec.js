@@ -20,5 +20,15 @@ describe("Module tests", () => {
       expect(mainTitle.vm).toBeTruthy();
       expect(getStarted.vm).toBeTruthy();
     });
+    test("'From' handler sets 'from'", async() => {
+      const from = "Mike";
+      await wrapper.vm.handleFromChange(from);
+      expect(wrapper.vm.from).toEqual(from);
+    });
+    test("'To' handler sets 'to'", async() => {
+      const to = "Mike";
+      await wrapper.vm.handleToChange(to);
+      expect(wrapper.vm.to).toEqual(to);
+    });
   });
 });
