@@ -15,5 +15,13 @@ describe("Module tests", () => {
     test("Renders correctly", () => {
       expect(wrapper.element).toMatchSnapshot();
     });
+    test("Set 'to'", async() => {
+      await wrapper.vm.handleToChange("Mike");
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("Set 'from'", async() => {
+      await wrapper.vm.handleFromChange("Boss");
+      expect(wrapper.element).toMatchSnapshot();
+    });
   });
 });

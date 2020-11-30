@@ -1,3 +1,5 @@
+import Avatar from "~/plugins/Avatar";
+
 export interface ComponentsMap {
   text: string,
   select: string
@@ -20,4 +22,8 @@ export interface Category {
 export interface Field {
   name: string,
   field: string
+}
+
+export interface IAvatar {
+  create(): string
 }

@@ -27,6 +27,14 @@ describe("Snapshot tests", () => {
       wrapper.vm.selectCategory(fetchedOptions);
       expect(wrapper.element).toMatchSnapshot();
     });
+    test("Emitted 'to' change", async() => {
+      await wrapper.vm.handleToChange();
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("Emitted 'from' change", async() => {
+      await wrapper.vm.handleFromChange();
+      expect(wrapper.element).toMatchSnapshot();
+    });
   });
   describe("Main Title", () => {
     const wrapper = mount(MainTitle, { localVue });
@@ -55,6 +63,20 @@ describe("Snapshot tests", () => {
       });
       test("Renders correctly with default type", async() => {
         await wrapper.setProps({ type: "" });
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Select options", async() => {
+        await wrapper.vm.optionSelected();
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Input changed", async() => {
+        const input = wrapper.find("input#Lbl");
+        await input.setValue("s");
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Empty input", async() => {
+        const input = wrapper.find("input#Lbl");
+        await input.setValue("");
         expect(wrapper.element).toMatchSnapshot();
       });
     });
