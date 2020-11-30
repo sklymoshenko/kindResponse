@@ -18,6 +18,7 @@
     "@dicebear/avatars": "^4.4.1",
     "@dicebear/avatars-human-sprites": "^4.4.1",
     "@nuxtjs/pwa": "^3.0.0-0",
+    "@types/node": "^13.1.8",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
     "husky": "^4.3.0",
