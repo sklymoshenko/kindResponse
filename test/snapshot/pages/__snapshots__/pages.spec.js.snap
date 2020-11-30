@@ -5,7 +5,7 @@ exports[`Module tests Index Renders correctly 1`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center mt-12"
+    class="flex flex-col justify-center items-center md:mb-8"
   >
     <span
       class="flex items-end"
@@ -34,10 +34,10 @@ exports[`Module tests Index Renders correctly 1`] = `
   </span>
    
   <div
-    class="started-test flex flex-col md:flex-row mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
+    class="started-test flex flex-col justify-evenly md:flex-row mx-auto w-4/5 md:w-full z-10 origin-center"
   >
     <div
-      class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
+      class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2"
     >
       <div
         class="rounded-md w-full my-2 relative"
@@ -260,7 +260,7 @@ exports[`Module tests Index Renders correctly 1`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-1/2 my-2 border-secondary border"
+      class="rounded-md w-full md:w-2/5 my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -331,7 +331,7 @@ exports[`Module tests Index Renders correctly 1`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
         >
           
     Hi can you tell me why you are not at work ?
@@ -420,7 +420,7 @@ exports[`Module tests Index Renders correctly 1`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
         >
           
     I dont know
@@ -444,7 +444,7 @@ exports[`Module tests Index Renders correctly 1`] = `
    
   <img
     alt="#"
-    class="backround-image w-6/12 md:w-3/12 absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -455,7 +455,7 @@ exports[`Module tests Index Set 'from' 1`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center mt-12"
+    class="flex flex-col justify-center items-center md:mb-8"
   >
     <span
       class="flex items-end"
@@ -484,10 +484,10 @@ exports[`Module tests Index Set 'from' 1`] = `
   </span>
    
   <div
-    class="started-test flex flex-col md:flex-row mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
+    class="started-test flex flex-col justify-evenly md:flex-row mx-auto w-4/5 md:w-full z-10 origin-center"
   >
     <div
-      class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
+      class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2"
     >
       <div
         class="rounded-md w-full my-2 relative"
@@ -710,7 +710,7 @@ exports[`Module tests Index Set 'from' 1`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-1/2 my-2 border-secondary border"
+      class="rounded-md w-full md:w-2/5 my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -793,7 +793,7 @@ exports[`Module tests Index Set 'from' 1`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
         >
           
     Hi can you tell me why you are not at work ?
@@ -892,7 +892,7 @@ exports[`Module tests Index Set 'from' 1`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
         >
           
     I dont know
@@ -916,7 +916,7 @@ exports[`Module tests Index Set 'from' 1`] = `
    
   <img
     alt="#"
-    class="backround-image w-6/12 md:w-3/12 absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -927,7 +927,7 @@ exports[`Module tests Index Set 'to' 1`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center mt-12"
+    class="flex flex-col justify-center items-center md:mb-8"
   >
     <span
       class="flex items-end"
@@ -956,10 +956,10 @@ exports[`Module tests Index Set 'to' 1`] = `
   </span>
    
   <div
-    class="started-test flex flex-col md:flex-row mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
+    class="started-test flex flex-col justify-evenly md:flex-row mx-auto w-4/5 md:w-full z-10 origin-center"
   >
     <div
-      class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
+      class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2"
     >
       <div
         class="rounded-md w-full my-2 relative"
@@ -1182,7 +1182,7 @@ exports[`Module tests Index Set 'to' 1`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-1/2 my-2 border-secondary border"
+      class="rounded-md w-full md:w-2/5 my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -1265,7 +1265,7 @@ exports[`Module tests Index Set 'to' 1`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
         >
           
     Hi can you tell me why you are not at work ?
@@ -1354,7 +1354,7 @@ exports[`Module tests Index Set 'to' 1`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
         >
           
     I dont know
@@ -1378,7 +1378,7 @@ exports[`Module tests Index Set 'to' 1`] = `
    
   <img
     alt="#"
-    class="backround-image w-6/12 md:w-3/12 absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>

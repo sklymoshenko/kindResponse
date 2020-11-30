@@ -1,5 +1,5 @@
 <template>
-  <div class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto">
+  <div class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2">
     <BaseAttribute label="From" type="text" placeholder="Mike" @input:changed="handleFromChange" />
     <BaseAttribute label="To" type="text" placeholder="My lovely Boss" @input:changed="handleToChange" />
     <BaseAttribute

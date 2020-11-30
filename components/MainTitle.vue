@@ -1,5 +1,5 @@
 <template>
-  <span class="flex flex-col justify-center items-center mt-12">
+  <span class="flex flex-col justify-center items-center md:mb-8">
     <span class="flex items-end">
       <p class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1">
         Kind responses for everybody

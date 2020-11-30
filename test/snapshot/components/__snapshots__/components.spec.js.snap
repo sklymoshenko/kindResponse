@@ -572,7 +572,7 @@ exports[`Snapshot tests Base components Select openDropDown => toggle showDropDo
 
 exports[`Snapshot tests Get Started Emitted 'from' change 1`] = `
 <div
-  class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
+  class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2"
 >
   <div
     class="rounded-md w-full my-2 relative"
@@ -782,7 +782,7 @@ exports[`Snapshot tests Get Started Emitted 'from' change 1`] = `
 
 exports[`Snapshot tests Get Started Emitted 'to' change 1`] = `
 <div
-  class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
+  class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2"
 >
   <div
     class="rounded-md w-full my-2 relative"
@@ -992,7 +992,7 @@ exports[`Snapshot tests Get Started Emitted 'to' change 1`] = `
 
 exports[`Snapshot tests Get Started Renders correctly 1`] = `
 <div
-  class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
+  class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2"
 >
   <div
     class="rounded-md w-full my-2 relative"
@@ -1217,7 +1217,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
 
 exports[`Snapshot tests Get Started Shows selected category 1`] = `
 <div
-  class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
+  class="wrapper w-full md:w-2/5 flex flex-col mt-3 md:my-auto shadow-md p-2"
 >
   <div
     class="rounded-md w-full my-2 relative"
@@ -1442,7 +1442,7 @@ exports[`Snapshot tests Get Started Shows selected category 1`] = `
 
 exports[`Snapshot tests Main Title Renders correctly 1`] = `
 <span
-  class="flex flex-col justify-center items-center mt-12"
+  class="flex flex-col justify-center items-center md:mb-8"
 >
   <span
     class="flex items-end"

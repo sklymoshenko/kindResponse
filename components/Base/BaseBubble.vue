@@ -3,7 +3,7 @@
     <!-- <img class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white" src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""> -->
     <span class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white" v-html="avatar" />
     <div
-      :class="`${bubbleBg} w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white`"
+      :class="`${bubbleBg} w-1/2 mt-2 mb-8 p-2 rounded-lg text-white`"
     >
       {{ text }}
     </div>

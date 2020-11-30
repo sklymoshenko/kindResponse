@@ -2,7 +2,7 @@
   <div class="container md:h-screen relative">
     <MainTitle />
     <div
-      class="started-test flex flex-col md:flex-row mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
+      class="started-test flex flex-col justify-evenly md:flex-row mx-auto w-4/5 md:w-full z-10 origin-center"
     >
       <GetStarted
         @from:changed="handleFromChange"
@@ -23,7 +23,7 @@
     <img
       src="../static/undraw_share_opinion_jpw0.svg"
       alt="#"
-      class="backround-image w-6/12 md:w-3/12 absolute bottom-2 right-4 md:bottom-2 md:right-15"
+      class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
     >
   </div>
 </template>

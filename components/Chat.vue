@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-md w-full md:w-1/2 my-2 border-secondary border">
+  <div class="rounded-md w-full md:w-2/5 my-2">
     <BaseBubble :text="`Hi can you tell me why you are not at work ?`" :name="currentTo" />
     <BaseBubble :text="`I dont know`" :side="rightSide" :name="currentFrom" />
   </div>
