@@ -34,7 +34,7 @@ exports[`Module tests Index Renders correctly 1`] = `
   </span>
    
   <div
-    class="started-test flex mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
+    class="started-test flex flex-col md:flex-row mx-auto border-secondary border-solid border-2 w-4/5 z-10 origin-center"
   >
     <div
       class="wrapper w-full md:w-1/2 flex flex-col  mt-3 md:my-auto"
@@ -251,9 +251,49 @@ exports[`Module tests Index Renders correctly 1`] = `
           </svg>
         </span>
         
-      Find Response
-    
+    Find Response
+  
       </button>
+    </div>
+     
+    <div
+      class="rounded-md w-full md:w-1/2 my-2 border-secondary border"
+    >
+      <div
+        class="clearfix flex items-end "
+      >
+        <img
+          alt=""
+          class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white"
+          src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        />
+         
+        <div
+          class="bg-secondary w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+        >
+          
+    Hi can you tell me why you are not at work ?
+  
+        </div>
+      </div>
+       
+      <div
+        class="clearfix flex items-end flex-row-reverse"
+      >
+        <img
+          alt=""
+          class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white"
+          src="https://images.unsplash.com/photo-1550525811-e5869dd03032?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+        />
+         
+        <div
+          class="bg-danger w-1/2 mx-4 mt-2 mb-8 p-2 rounded-lg text-white"
+        >
+          
+    I dont know
+  
+        </div>
+      </div>
     </div>
   </div>
 </div>

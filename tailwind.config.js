@@ -10,7 +10,7 @@ module.exports = {
       primary: "#3f3e56",
       secondary: "#6c63ff",
       shade: "#d0cde1",
-      danger: "#EF4444",
+      danger: "#f66584",
       "primary-hovered": "#3f3e56",
       "secondary-hovered": "#6c63ffd6",
       white: "#fff"
