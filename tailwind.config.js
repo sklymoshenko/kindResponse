@@ -13,6 +13,8 @@ module.exports = {
       danger: "#f66584",
       "primary-hovered": "#3f3e56",
       "secondary-hovered": "#6c63ffd6",
+      pink: "#f8f1f4cf",
+      "pink-inside": "#faedf238",
       white: "#fff"
     },
     fontFamily: {

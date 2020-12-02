@@ -53,7 +53,7 @@ exports[`Module tests Index Renders correctly 1`] = `
          
         <input
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
           id="From"
           label="From"
           options="[object Object]"
@@ -86,7 +86,7 @@ exports[`Module tests Index Renders correctly 1`] = `
          
         <input
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
           id="To"
           label="To"
           options="[object Object]"
@@ -119,7 +119,7 @@ exports[`Module tests Index Renders correctly 1`] = `
          
         <div
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
           id=" Category"
           label=" Category"
           placeholder=""
@@ -129,7 +129,7 @@ exports[`Module tests Index Renders correctly 1`] = `
             aria-expanded="true"
             aria-haspopup="listbox"
             aria-labelledby="listbox-label"
-            class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+            class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
             id="dropdown-button"
             type="button"
           >
@@ -170,7 +170,7 @@ exports[`Module tests Index Renders correctly 1`] = `
             <ul
               aria-activedescendant="listbox-item-3"
               aria-labelledby="listbox-label"
-              class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+              class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
               role="listbox"
               tabindex="-1"
             >
@@ -503,7 +503,7 @@ exports[`Module tests Index Set 'from' 1`] = `
          
         <input
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
           id="From"
           label="From"
           options="[object Object]"
@@ -536,7 +536,7 @@ exports[`Module tests Index Set 'from' 1`] = `
          
         <input
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
           id="To"
           label="To"
           options="[object Object]"
@@ -569,7 +569,7 @@ exports[`Module tests Index Set 'from' 1`] = `
          
         <div
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
           id=" Category"
           label=" Category"
           placeholder=""
@@ -579,7 +579,7 @@ exports[`Module tests Index Set 'from' 1`] = `
             aria-expanded="true"
             aria-haspopup="listbox"
             aria-labelledby="listbox-label"
-            class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+            class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
             id="dropdown-button"
             type="button"
           >
@@ -620,7 +620,7 @@ exports[`Module tests Index Set 'from' 1`] = `
             <ul
               aria-activedescendant="listbox-item-3"
               aria-labelledby="listbox-label"
-              class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+              class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
               role="listbox"
               tabindex="-1"
             >
@@ -975,7 +975,7 @@ exports[`Module tests Index Set 'to' 1`] = `
          
         <input
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
           id="From"
           label="From"
           options="[object Object]"
@@ -1008,7 +1008,7 @@ exports[`Module tests Index Set 'to' 1`] = `
          
         <input
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
           id="To"
           label="To"
           options="[object Object]"
@@ -1041,7 +1041,7 @@ exports[`Module tests Index Set 'to' 1`] = `
          
         <div
           autocomplete="chrome-off"
-          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+          class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
           id=" Category"
           label=" Category"
           placeholder=""
@@ -1051,7 +1051,7 @@ exports[`Module tests Index Set 'to' 1`] = `
             aria-expanded="true"
             aria-haspopup="listbox"
             aria-labelledby="listbox-label"
-            class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+            class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
             id="dropdown-button"
             type="button"
           >
@@ -1092,7 +1092,7 @@ exports[`Module tests Index Set 'to' 1`] = `
             <ul
               aria-activedescendant="listbox-item-3"
               aria-labelledby="listbox-label"
-              class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+              class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
               role="listbox"
               tabindex="-1"
             >
