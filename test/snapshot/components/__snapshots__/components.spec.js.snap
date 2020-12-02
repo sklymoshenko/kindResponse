@@ -15,7 +15,7 @@ exports[`Snapshot tests Base components Attribute Empty input 1`] = `
    
   <input
     autocomplete="chrome-off"
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
     id="Lbl"
     label="Lbl"
     options="[object Object]"
@@ -50,7 +50,7 @@ exports[`Snapshot tests Base components Attribute Input changed 1`] = `
    
   <input
     autocomplete="chrome-off"
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
     id="Lbl"
     label="Lbl"
     options="[object Object]"
@@ -85,7 +85,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly 1`] = `
    
   <input
     autocomplete="chrome-off"
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
     id="Lbl"
     label="Lbl"
     options="[object Object]"
@@ -120,7 +120,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly with another
    
   <div
     autocomplete="chrome-off"
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
     id="Lbl"
     label="Lbl"
     placeholder=""
@@ -130,7 +130,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly with another
       aria-expanded="true"
       aria-haspopup="listbox"
       aria-labelledby="listbox-label"
-      class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+      class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
       id="dropdown-button"
       type="button"
     >
@@ -171,7 +171,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly with another
       <ul
         aria-activedescendant="listbox-item-3"
         aria-labelledby="listbox-label"
-        class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+        class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
         role="listbox"
         tabindex="-1"
       >
@@ -215,7 +215,7 @@ exports[`Snapshot tests Base components Attribute Renders correctly with default
    
   <input
     autocomplete="chrome-off"
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
     id="Lbl"
     label="Lbl"
     options="[object Object]"
@@ -250,7 +250,7 @@ exports[`Snapshot tests Base components Attribute Select options 1`] = `
    
   <input
     autocomplete="chrome-off"
-    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+    class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
     id="Lbl"
     label="Lbl"
     options="[object Object]"
@@ -276,7 +276,7 @@ exports[`Snapshot tests Base components Select Click on option change selected 1
     aria-expanded="true"
     aria-haspopup="listbox"
     aria-labelledby="listbox-label"
-    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
     id="dropdown-button"
     type="button"
   >
@@ -317,7 +317,7 @@ exports[`Snapshot tests Base components Select Click on option change selected 1
     <ul
       aria-activedescendant="listbox-item-3"
       aria-labelledby="listbox-label"
-      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
       role="listbox"
       tabindex="-1"
     >
@@ -351,7 +351,7 @@ exports[`Snapshot tests Base components Select Close dropdown on blur 1`] = `
     aria-expanded="true"
     aria-haspopup="listbox"
     aria-labelledby="listbox-label"
-    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
     id="dropdown-button"
     type="button"
   >
@@ -392,7 +392,7 @@ exports[`Snapshot tests Base components Select Close dropdown on blur 1`] = `
     <ul
       aria-activedescendant="listbox-item-3"
       aria-labelledby="listbox-label"
-      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
       role="listbox"
       tabindex="-1"
     >
@@ -426,7 +426,7 @@ exports[`Snapshot tests Base components Select Renders correctly 1`] = `
     aria-expanded="true"
     aria-haspopup="listbox"
     aria-labelledby="listbox-label"
-    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
     id="dropdown-button"
     type="button"
   >
@@ -467,7 +467,7 @@ exports[`Snapshot tests Base components Select Renders correctly 1`] = `
     <ul
       aria-activedescendant="listbox-item-3"
       aria-labelledby="listbox-label"
-      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
       role="listbox"
       tabindex="-1"
     >
@@ -501,7 +501,7 @@ exports[`Snapshot tests Base components Select openDropDown => toggle showDropDo
     aria-expanded="true"
     aria-haspopup="listbox"
     aria-labelledby="listbox-label"
-    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+    class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
     id="dropdown-button"
     type="button"
   >
@@ -542,7 +542,7 @@ exports[`Snapshot tests Base components Select openDropDown => toggle showDropDo
     <ul
       aria-activedescendant="listbox-item-3"
       aria-labelledby="listbox-label"
-      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+      class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
       role="listbox"
       tabindex="-1"
     >
@@ -588,7 +588,7 @@ exports[`Snapshot tests Get Started Emitted 'from' change 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="From"
       label="From"
       options="[object Object]"
@@ -621,7 +621,7 @@ exports[`Snapshot tests Get Started Emitted 'from' change 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="To"
       label="To"
       options="[object Object]"
@@ -654,7 +654,7 @@ exports[`Snapshot tests Get Started Emitted 'from' change 1`] = `
      
     <div
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
       id=" Category"
       label=" Category"
       placeholder=""
@@ -664,7 +664,7 @@ exports[`Snapshot tests Get Started Emitted 'from' change 1`] = `
         aria-expanded="true"
         aria-haspopup="listbox"
         aria-labelledby="listbox-label"
-        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
         id="dropdown-button"
         type="button"
       >
@@ -705,7 +705,7 @@ exports[`Snapshot tests Get Started Emitted 'from' change 1`] = `
         <ul
           aria-activedescendant="listbox-item-3"
           aria-labelledby="listbox-label"
-          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
           role="listbox"
           tabindex="-1"
         >
@@ -798,7 +798,7 @@ exports[`Snapshot tests Get Started Emitted 'to' change 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="From"
       label="From"
       options="[object Object]"
@@ -831,7 +831,7 @@ exports[`Snapshot tests Get Started Emitted 'to' change 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="To"
       label="To"
       options="[object Object]"
@@ -864,7 +864,7 @@ exports[`Snapshot tests Get Started Emitted 'to' change 1`] = `
      
     <div
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
       id=" Category"
       label=" Category"
       placeholder=""
@@ -874,7 +874,7 @@ exports[`Snapshot tests Get Started Emitted 'to' change 1`] = `
         aria-expanded="true"
         aria-haspopup="listbox"
         aria-labelledby="listbox-label"
-        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
         id="dropdown-button"
         type="button"
       >
@@ -915,7 +915,7 @@ exports[`Snapshot tests Get Started Emitted 'to' change 1`] = `
         <ul
           aria-activedescendant="listbox-item-3"
           aria-labelledby="listbox-label"
-          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
           role="listbox"
           tabindex="-1"
         >
@@ -1008,7 +1008,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="From"
       label="From"
       options="[object Object]"
@@ -1041,7 +1041,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="To"
       label="To"
       options="[object Object]"
@@ -1074,7 +1074,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
      
     <div
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
       id=" Category"
       label=" Category"
       placeholder=""
@@ -1084,7 +1084,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
         aria-expanded="true"
         aria-haspopup="listbox"
         aria-labelledby="listbox-label"
-        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
         id="dropdown-button"
         type="button"
       >
@@ -1125,7 +1125,7 @@ exports[`Snapshot tests Get Started Renders correctly 1`] = `
         <ul
           aria-activedescendant="listbox-item-3"
           aria-labelledby="listbox-label"
-          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
           role="listbox"
           tabindex="-1"
         >
@@ -1233,7 +1233,7 @@ exports[`Snapshot tests Get Started Shows selected category 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="From"
       label="From"
       options="[object Object]"
@@ -1266,7 +1266,7 @@ exports[`Snapshot tests Get Started Shows selected category 1`] = `
      
     <input
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary border-b border-solid border-primary pl-2"
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside border-b border-solid border-primary pl-2"
       id="To"
       label="To"
       options="[object Object]"
@@ -1299,7 +1299,7 @@ exports[`Snapshot tests Get Started Shows selected category 1`] = `
      
     <div
       autocomplete="chrome-off"
-      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary "
+      class="focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside "
       id=" Category"
       label=" Category"
       placeholder=""
@@ -1309,7 +1309,7 @@ exports[`Snapshot tests Get Started Shows selected category 1`] = `
         aria-expanded="true"
         aria-haspopup="listbox"
         aria-labelledby="listbox-label"
-        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+        class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
         id="dropdown-button"
         type="button"
       >
@@ -1350,7 +1350,7 @@ exports[`Snapshot tests Get Started Shows selected category 1`] = `
         <ul
           aria-activedescendant="listbox-item-3"
           aria-labelledby="listbox-label"
-          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+          class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
           role="listbox"
           tabindex="-1"
         >
