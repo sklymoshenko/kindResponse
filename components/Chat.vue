@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-md w-full md:w-2/5 my-2">
-    <BaseBubble :text="`Hi can you tell me why you are not at work ?`" :name="currentTo" />
-    <BaseBubble :text="`I dont know`" :side="rightSide" :name="currentFrom" />
+    <BaseBubble :text="question" :name="currentTo" />
+    <BaseBubble text="How should i respond hmm..." :side="rightSide" :name="currentFrom" />
   </div>
 </template>
 
@@ -21,6 +21,9 @@ export default class Chat extends Vue {
 
   @Prop({ type: String, default: "My lovely Boss" })
   to!: string;
+
+  @Prop({ type: String, default: "Loading..." })
+  question!: string;
 
   rightSide: Side = Side.RIGHT;
 

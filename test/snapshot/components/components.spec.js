@@ -1,5 +1,7 @@
 import { mount, createLocalVue } from "@vue/test-utils";
+
 import BlurClosing from "@/directives/blurClosing.ts";
+
 import GetStarted from "@/components/GetStarted.vue";
 import MainTitle from "@/components/MainTitle.vue";
 import BaseAttribute from "@/components/Base/BaseAttribute.vue";
@@ -104,6 +106,15 @@ describe("Snapshot tests", () => {
         await wrapper.vm.$nextTick();
         expect(wrapper.element).toMatchSnapshot();
       });
+    });
+  });
+  describe("Chat", () => {
+    const wrapper = mount(MainTitle, { localVue });
+    test("Should create a vue instance", () => {
+      expect(wrapper.vm).toBeTruthy();
+    });
+    test("Renders correctly", () => {
+      expect(wrapper.element).toMatchSnapshot();
     });
   });
 });

@@ -8,7 +8,7 @@
         @from:changed="handleFromChange"
         @to:changed="handleToChange"
       />
-      <Chat :to="to" :from="from" />
+      <Chat :to="to" :from="from" :question="currentQuestion()" />
     </div>
     <img
       src="../static/undraw_conversation_h12g.svg"
@@ -40,6 +40,26 @@ import Chat from "~/components/Chat.vue";
 export default class Index extends Vue {
   from: string = "Mike";
   to: string = "My lovely Boss";
+  questions: string[] = ["Will you work on holidays this year?", "Can you help me to move my stuff?", "Take me from the airport. I will arive at 3 AM."];
+  currentQuestion(): string {
+    const i = this.randomIntegerBetween(0, this.questions.length - 1);
+    const current = this.questions[i];
+    return current;
+  };
+
+  randomIntegerBetween(a: number, b: number): number {
+    if (typeof a !== "number" || typeof b !== "number") { return 0; }
+    let minNum = a;
+    let maxNum = b;
+    if (a < b) {
+      minNum = b;
+      maxNum = a;
+    }
+    const min: number = Math.ceil(minNum);
+    const max: number = Math.floor(maxNum);
+    const randomNumber: number = Math.floor(Math.random() * (max - min + 1)) + min;
+    return randomNumber;
+  }
 
   handleFromChange(from: string): void {
     this.from = from;

@@ -1,14 +1,21 @@
 import { mount, createLocalVue } from "@vue/test-utils";
+
 import BlurClosing from "@/directives/blurClosing.ts";
 import Index from "@/pages/index.vue";
+import Chat from "~/components/Chat.vue";
+
 const localVue = createLocalVue();
 
 localVue.directive("blur-closing", BlurClosing);
 
 describe("Module tests", () => {
   describe("Index", () => {
-    fetch.mockResponse(JSON.stringify([{ name: "test", selected: false }, { name: "test2", selected: false }]));
-    const wrapper = mount(Index);
+    let wrapper;
+    beforeEach(async() => {
+      fetch.mockResponse(JSON.stringify([{ name: "test", selected: false }, { name: "test2", selected: false }]));
+      wrapper = mount(Index);
+      await wrapper.findComponent(Chat).setProps("question", "Test question");
+    });
     test("Should create a a vue instance", () => {
       expect(wrapper.vm).toBeTruthy();
     });
@@ -21,6 +28,12 @@ describe("Module tests", () => {
     });
     test("Set 'from'", async() => {
       await wrapper.vm.handleFromChange("Boss");
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("Randon questions with different input ", async() => {
+      await wrapper.vm.randomIntegerBetween(0, 1);
+      expect(wrapper.element).toMatchSnapshot();
+      await wrapper.vm.randomIntegerBetween(3, 1);
       expect(wrapper.element).toMatchSnapshot();
     });
   });

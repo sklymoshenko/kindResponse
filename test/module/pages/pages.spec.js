@@ -30,5 +30,35 @@ describe("Module tests", () => {
       await wrapper.vm.handleToChange(to);
       expect(wrapper.vm.to).toEqual(to);
     });
+    test("Always returns a question", () => {
+      const question = wrapper.vm.currentQuestion();
+      expect(question).toBeDefined();
+    });
+    test("a > b -> returns a random integer between", () => {
+      const min = [0, 2, 8];
+      const max = [3, 6, 10];
+      min.forEach((minNum, i) => {
+        const maxNum = max[i];
+        const result = wrapper.vm.randomIntegerBetween(minNum, maxNum);
+        expect(result).toBeGreaterThanOrEqual(minNum);
+        expect(result).toBeLessThanOrEqual(maxNum);
+      });
+    });
+    test("a < b -> returns a random integer between", () => {
+      const min = [0, 2, 8];
+      const max = [3, 6, 10];
+      min.forEach((minNum, i) => {
+        const maxNum = max[i];
+        const result = wrapper.vm.randomIntegerBetween(maxNum, minNum);
+        expect(result).toBeGreaterThanOrEqual(minNum);
+        expect(result).toBeLessThanOrEqual(maxNum);
+      });
+    });
+    test("a and b arent integers -> returns 0", () => {
+      const min = "15";
+      const max = "2";
+      const result = wrapper.vm.randomIntegerBetween(min, max);
+      expect(result).toBe(0);
+    });
   });
 });
