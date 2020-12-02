@@ -4,15 +4,17 @@ import BlurClosing from "@/directives/blurClosing.ts";
 import Index from "@/pages/index.vue";
 import Chat from "~/components/Chat.vue";
 
-const localVue = createLocalVue();
+import { mockFetchedCategories } from "@/test/mocks.ts";
+const { fetchedOptions } = mockFetchedCategories();
 
+const localVue = createLocalVue();
 localVue.directive("blur-closing", BlurClosing);
 
 describe("Module tests", () => {
   describe("Index", () => {
     let wrapper;
     beforeEach(async() => {
-      fetch.mockResponse(JSON.stringify([{ name: "test", selected: false }, { name: "test2", selected: false }]));
+      fetch.mockResponse(JSON.stringify(fetchedOptions));
       wrapper = mount(Index);
       await wrapper.findComponent(Chat).setProps("question", "Test question");
     });

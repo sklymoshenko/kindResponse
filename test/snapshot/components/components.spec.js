@@ -7,7 +7,9 @@ import MainTitle from "@/components/MainTitle.vue";
 import BaseAttribute from "@/components/Base/BaseAttribute.vue";
 import BaseSelect from "@/components/Base/BaseSelect.vue";
 
-const fetchedOptions = [{ name: "test", selected: false }, { name: "test2", selected: false }];
+import { mockFetchedCategories } from "@/test/mocks.ts";
+const { fetchedOptions } = mockFetchedCategories();
+
 const localVue = createLocalVue();
 
 localVue.directive("blur-closing", BlurClosing);

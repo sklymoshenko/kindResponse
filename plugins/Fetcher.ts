@@ -1,10 +1,10 @@
-import { Parametrs, Category } from "@/interfaces/BaseInterfaces.ts";
+import { Parametrs, Category, IFetcher } from "@/interfaces/BaseInterfaces.ts";
 import { mapRoute } from "@/plugins/mappers.ts";
 
-class Fetcher {
-  private mappedRoute: string = "";
-  private mainUrl: string = "https://www.foaas.com";
-  private url: string = "";
+class Fetcher implements IFetcher {
+  protected mappedRoute: string = "";
+  protected mainUrl: string = "https://www.foaas.com";
+  protected url: string = "";
 
   constructor(params: Parametrs, toMap: boolean = false) {
     const { baseUrl } = params;
@@ -15,13 +15,7 @@ class Fetcher {
     this.url = `${this.mainUrl}${this.mappedRoute}`;
   }
 
-  async getCategories(): Promise<Category[]> {
-    const response = await fetch(this.url);
-    const data = await response.json();
-    return data;
-  }
-
-  async getSentece(): Promise<string> {
+  async fetch(): Promise<Category[] | string> {
     const response = await fetch(this.url);
     const data = await response.json();
     return data;

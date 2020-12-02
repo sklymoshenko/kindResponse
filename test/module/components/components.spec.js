@@ -5,10 +5,11 @@ import BaseAttribute from "@/components/Base/BaseAttribute.vue";
 import BaseSelect from "@/components/Base/BaseSelect.vue";
 import BlurClosing from "@/directives/blurClosing.ts";
 
+import { mockFetchedCategories } from "@/test/mocks.ts";
+const { fetchedOptions } = mockFetchedCategories();
+
 const localVue = createLocalVue();
 localVue.directive("blur-closing", BlurClosing);
-
-const fetchedOptions = [{ name: "test", selected: false }, { name: "test2", selected: false }];
 
 describe("Module tests", () => {
   describe("Get Started", () => {
@@ -26,12 +27,21 @@ describe("Module tests", () => {
       await wrapper.vm.fetchCategories();
       expect(wrapper.vm.selectOptions).toHaveLength(2);
     });
-    test("Select first value as default", async() => {
-      await wrapper.vm.fetchCategories();
-      expect(wrapper.vm.selectOptions[0].selected).toBe(true);
+    test("Dont set default if no options", async() => {
+      const { fetchedOptions } = mockFetchedCategories();
+      await wrapper.setData({ selectOptions: fetchedOptions });
+      expect(wrapper.vm.selectOptions).toHaveLength(fetchedOptions.length);
+      expect(wrapper.vm.selectOptions).toEqual(fetchedOptions);
+    });
+    test("Dont set selected by input if no options", async() => {
+      const { fetchedOptions } = mockFetchedCategories();
+      await wrapper.setData({ selectOptions: fetchedOptions });
+      await wrapper.vm.selectCategory();
+      expect(wrapper.vm.selectOptions).toHaveLength(fetchedOptions.length);
+      expect(wrapper.vm.selectOptions).toEqual(fetchedOptions);
     });
     test("Set 'selected' true for one, other are false", async() => {
-      await wrapper.vm.selectCategory(fetchedOptions[1]);
+      await wrapper.vm.selectCategory(fetchedOptions[1], wrapper.vm.selectOptions);
       expect(wrapper.vm.selectOptions[1].selected).toBe(true);
     });
     test("'From' handler returns event data", async() => {

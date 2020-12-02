@@ -4,12 +4,15 @@ import Index from "@/pages/index.vue";
 import MainTitle from "@/components/MainTitle.vue";
 import GetStarted from "@/components/GetStarted.vue";
 
+import { mockFetchedCategories } from "@/test/mocks.ts";
+const { fetchedOptions } = mockFetchedCategories();
+
 const localVue = createLocalVue();
 localVue.directive("blur-closing", BlurClosing);
 
 describe("Module tests", () => {
   describe("Index", () => {
-    fetch.mockResponse(JSON.stringify([{ name: "test", selected: false }, { name: "test2", selected: false }]));
+    fetch.mockResponse(JSON.stringify(fetchedOptions));
     const wrapper = mount(Index);
     test("Should create a a vue instance", () => {
       expect(wrapper.vm).toBeTruthy();
