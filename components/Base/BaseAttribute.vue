@@ -7,7 +7,7 @@
       :is="component"
       :id="label"
       v-bind="$props"
-      :class="`focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary ${textInputClasses}`"
+      :class="`focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside ${textInputClasses}`"
       :placeholder="placeholder"
       autocomplete="chrome-off"
       @option:select="optionSelected"

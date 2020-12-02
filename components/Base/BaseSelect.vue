@@ -6,7 +6,7 @@
       aria-haspopup="listbox"
       aria-expanded="true"
       aria-labelledby="listbox-label"
-      class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-default focus:outline-none focus:ring-1 focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm excluded"
+      class="relative w-full border border-primary rounded-md pl-3 pr-10 py-2 text-left cursor-pointer focus:outline-none bg-danger sm:text-sm excluded text-white"
       @click="openDropDown($event)"
     >
       <span class="flex items-center">
@@ -49,7 +49,7 @@
         role="listbox"
         aria-labelledby="listbox-label"
         aria-activedescendant="listbox-item-3"
-        class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48"
+        class="max-h-56 rounded-md py-1 text-base ring-1 ring-black ring-opacity-5 overflow-auto focus:outline-none sm:text-sm h-48 bg-pink-inside"
       >
         <!--
           Select option, manage highlight styles based on mouseenter/mouseleave and keyboard navigation.
