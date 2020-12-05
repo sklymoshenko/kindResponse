@@ -7,10 +7,21 @@ import MainTitle from "@/components/MainTitle.vue";
 import BaseAttribute from "@/components/Base/BaseAttribute.vue";
 import BaseSelect from "@/components/Base/BaseSelect.vue";
 import BaseBubble from "@/components/Base/BaseBubble.vue";
+import Chat from "@/components/Chat.vue";
 
 import { mockFetchedCategories } from "@/test/mocks.ts";
 import { Side, State } from "~/enums/enums";
 const { fetchedOptions } = mockFetchedCategories();
+
+const mockClipboard = jest.fn(x => x);
+// Mock clibboard for jest
+window.__defineGetter__("navigator", function() {
+  return {
+    clipboard: {
+      writeText: () => mockClipboard()
+    }
+  };
+});
 
 const localVue = createLocalVue();
 localVue.directive("blur-closing", BlurClosing);
@@ -62,12 +73,23 @@ describe("Module tests", () => {
 
   describe("Main Title", () => {
     const wrapper = mount(MainTitle);
-    test("Should create a a vue instance", () => {
+    test("Should create a vue instance", () => {
       expect(wrapper.vm).toBeTruthy();
     });
     test("Has text and svg icon", () => {
       expect(wrapper.find(".title-test").element).toBeDefined();
       expect(wrapper.find(".icon-test").element).toBeDefined();
+    });
+  });
+
+  describe("Chat", () => {
+    const wrapper = mount(Chat);
+    test("Should create a vue instance", () => {
+      expect(wrapper.vm).toBeTruthy();
+    });
+    test("copyText calls navigator writeText", async() => {
+      await wrapper.vm.copyText("text");
+      expect(mockClipboard).toBeCalled();
     });
   });
 

@@ -1,7 +1,7 @@
 <template>
   <div class="rounded-md w-full md:w-2/5 my-2">
-    <BaseBubble :text="question" :name="currentTo" />
-    <BaseBubble text="How should i respond hmm..." :side="rightSide" :name="currentFrom" />
+    <BaseBubble :text="question" :name="currentTo" @text:copy="copyText" />
+    <BaseBubble text="How should i respond hmm..." :side="rightSide" :name="currentFrom" @text:copy="copyText" />
   </div>
 </template>
 
@@ -12,6 +12,7 @@ import {
   Vue
 } from "nuxt-property-decorator";
 import { Side } from "@/enums/enums.ts";
+import { copyToClipboard } from "@/plugins/utils.ts";
 
 import BaseBubble from "@/components/Base/BaseBubble.vue";
 @Component({ components: { BaseBubble } })
@@ -33,6 +34,10 @@ export default class Chat extends Vue {
 
   get currentFrom(): string {
     return this.from;
+  }
+
+  async copyText(text: string): Promise<void> {
+    await copyToClipboard(text);
   }
 };
 </script>
