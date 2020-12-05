@@ -7,6 +7,7 @@ import MainTitle from "@/components/MainTitle.vue";
 import BaseAttribute from "@/components/Base/BaseAttribute.vue";
 import BaseSelect from "@/components/Base/BaseSelect.vue";
 import BaseBubble from "@/components/Base/BaseBubble.vue";
+import BaseTooltip from "@/components/Base/BaseTooltip.vue";
 import Chat from "@/components/Chat.vue";
 
 import { mockFetchedCategories } from "@/test/mocks.ts";
@@ -280,6 +281,46 @@ describe("Module tests", () => {
             expect(wrapper.vm.tooltipInfo).toEqual(tooltipInfo);
             expect(wrapper.vm.tooltipState).toEqual(State.SUCCESS);
           });
+        });
+      });
+    });
+    describe("Tooltip", () => {
+      const wrapper = mount(BaseTooltip);
+      describe("Computed", () => {
+        test("show tooltip", () => {
+          expect(wrapper.vm.showTooltip).toBeDefined();
+          expect(wrapper.vm.showTooltip).toBeTruthy();
+          wrapper.setProps({ show: true });
+          expect(wrapper.vm.showTooltip).toBeDefined();
+          expect(wrapper.vm.showTooltip).toBeTruthy();
+        });
+        test("boxState", () => {
+          expect(wrapper.vm.boxState).toBeDefined();
+          expect(wrapper.vm.boxState).toBeTruthy();
+          wrapper.setProps({ state: State.SUCCESS });
+          expect(wrapper.vm.boxState).toBeDefined();
+          expect(wrapper.vm.boxState).toBeTruthy();
+        });
+        test("triangleState", () => {
+          expect(wrapper.vm.triangleState).toBeDefined();
+          expect(wrapper.vm.triangleState).toBeTruthy();
+          wrapper.setProps({ state: State.SUCCESS });
+          expect(wrapper.vm.triangleState).toBeDefined();
+          expect(wrapper.vm.triangleState).toBeTruthy();
+        });
+        test("boxSide", () => {
+          expect(wrapper.vm.boxSide).toBeDefined();
+          expect(wrapper.vm.boxSide).toBeTruthy();
+          wrapper.setProps({ side: Side.RIGHT });
+          expect(wrapper.vm.boxSide).toBeDefined();
+          expect(wrapper.vm.boxSide).toBeTruthy();
+        });
+        test("triangleSide", () => {
+          expect(wrapper.vm.triangleSide).toBeDefined();
+          expect(wrapper.vm.triangleSide).toBeTruthy();
+          wrapper.setProps({ side: Side.RIGHT });
+          expect(wrapper.vm.triangleSide).toBeDefined();
+          expect(wrapper.vm.triangleSide).toBeTruthy();
         });
       });
     });

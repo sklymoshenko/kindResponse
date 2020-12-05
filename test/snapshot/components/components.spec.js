@@ -1,10 +1,11 @@
 import { mount, createLocalVue } from "@vue/test-utils";
 
 import BlurClosing from "@/directives/blurClosing.ts";
-import { State } from "@/enums/enums.ts";
+import { Side, State } from "@/enums/enums.ts";
 
 import GetStarted from "@/components/GetStarted.vue";
 import MainTitle from "@/components/MainTitle.vue";
+import Chat from "@/components/Chat.vue";
 import BaseAttribute from "@/components/Base/BaseAttribute.vue";
 import BaseSelect from "@/components/Base/BaseSelect.vue";
 import BaseBubble from "@/components/Base/BaseBubble.vue";
@@ -12,6 +13,15 @@ import BaseTooltip from "@/components/Base/BaseTooltip.vue";
 
 import { mockFetchedCategories } from "@/test/mocks.ts";
 const { fetchedOptions } = mockFetchedCategories();
+
+// Mock clibboard for jest
+window.__defineGetter__("navigator", function() {
+  return {
+    clipboard: {
+      writeText: () => mockClipboard()
+    }
+  };
+});
 
 const localVue = createLocalVue();
 
@@ -152,14 +162,22 @@ describe("Snapshot tests", () => {
         await wrapper.setProps({ show: true, state: State.SUCCESS });
         expect(wrapper.element).toMatchSnapshot();
       });
+      test("Set side to right", async() => {
+        await wrapper.setProps({ show: true, side: Side.RIGHT });
+        expect(wrapper.element).toMatchSnapshot();
+      });
     });
   });
   describe("Chat", () => {
-    const wrapper = mount(MainTitle, { localVue });
+    const wrapper = mount(Chat, { localVue });
     test("Should create a vue instance", () => {
       expect(wrapper.vm).toBeTruthy();
     });
     test("Renders correctly", () => {
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("Renders correctly", async() => {
+      await wrapper.vm.copyText();
       expect(wrapper.element).toMatchSnapshot();
     });
   });

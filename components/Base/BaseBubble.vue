@@ -8,7 +8,7 @@
       @click="copy"
     >
       {{ text }}
-      <BaseTooltip :text="tooltipInfo" :show="showTooltip" :state="tooltipState" />
+      <BaseTooltip :text="tooltipInfo" :show="showTooltip" :state="tooltipState" :side="side" />
     </div>
   </div>
 </template>

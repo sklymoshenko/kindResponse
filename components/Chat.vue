@@ -1,5 +1,5 @@
 <template>
-  <div class="rounded-md w-full md:w-2/5 my-2">
+  <div class="rounded-md w-full md:w-2/5 mt-20 md:my-2">
     <BaseBubble :text="question" :name="currentTo" @text:copy="copyText" />
     <BaseBubble text="How should i respond hmm..." :side="rightSide" :name="currentFrom" @text:copy="copyText" />
   </div>

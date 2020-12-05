@@ -5,7 +5,7 @@ exports[`Module tests Index Randon questions with different input  1`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center md:mb-8"
+    class="flex flex-col justify-center items-center mt-24 md:mb-8"
   >
     <span
       class="flex items-end"
@@ -261,7 +261,7 @@ exports[`Module tests Index Randon questions with different input  1`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-2/5 my-2"
+      class="rounded-md w-full md:w-2/5 mt-20 md:my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -338,10 +338,10 @@ exports[`Module tests Index Randon questions with different input  1`] = `
     Can you help me to move my stuff?
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-left"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral left"
             />
             
   Click to copy!
@@ -437,10 +437,10 @@ exports[`Module tests Index Randon questions with different input  1`] = `
     How should i respond hmm...
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-right"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral right"
             />
             
   Click to copy!
@@ -476,7 +476,7 @@ exports[`Module tests Index Randon questions with different input  2`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center md:mb-8"
+    class="flex flex-col justify-center items-center mt-24 md:mb-8"
   >
     <span
       class="flex items-end"
@@ -732,7 +732,7 @@ exports[`Module tests Index Randon questions with different input  2`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-2/5 my-2"
+      class="rounded-md w-full md:w-2/5 mt-20 md:my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -809,10 +809,10 @@ exports[`Module tests Index Randon questions with different input  2`] = `
     Can you help me to move my stuff?
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-left"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral left"
             />
             
   Click to copy!
@@ -908,10 +908,10 @@ exports[`Module tests Index Randon questions with different input  2`] = `
     How should i respond hmm...
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-right"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral right"
             />
             
   Click to copy!
@@ -947,7 +947,7 @@ exports[`Module tests Index Renders correctly 1`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center md:mb-8"
+    class="flex flex-col justify-center items-center mt-24 md:mb-8"
   >
     <span
       class="flex items-end"
@@ -1203,7 +1203,7 @@ exports[`Module tests Index Renders correctly 1`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-2/5 my-2"
+      class="rounded-md w-full md:w-2/5 mt-20 md:my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -1280,10 +1280,10 @@ exports[`Module tests Index Renders correctly 1`] = `
     Can you help me to move my stuff?
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-left"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral left"
             />
             
   Click to copy!
@@ -1379,10 +1379,10 @@ exports[`Module tests Index Renders correctly 1`] = `
     How should i respond hmm...
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-right"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral right"
             />
             
   Click to copy!
@@ -1418,7 +1418,7 @@ exports[`Module tests Index Set 'from' 1`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center md:mb-8"
+    class="flex flex-col justify-center items-center mt-24 md:mb-8"
   >
     <span
       class="flex items-end"
@@ -1674,7 +1674,7 @@ exports[`Module tests Index Set 'from' 1`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-2/5 my-2"
+      class="rounded-md w-full md:w-2/5 mt-20 md:my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -1751,10 +1751,10 @@ exports[`Module tests Index Set 'from' 1`] = `
     Can you help me to move my stuff?
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-left"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral left"
             />
             
   Click to copy!
@@ -1860,10 +1860,10 @@ exports[`Module tests Index Set 'from' 1`] = `
     How should i respond hmm...
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-right"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral right"
             />
             
   Click to copy!
@@ -1899,7 +1899,7 @@ exports[`Module tests Index Set 'to' 1`] = `
   class="container md:h-screen relative"
 >
   <span
-    class="flex flex-col justify-center items-center md:mb-8"
+    class="flex flex-col justify-center items-center mt-24 md:mb-8"
   >
     <span
       class="flex items-end"
@@ -2155,7 +2155,7 @@ exports[`Module tests Index Set 'to' 1`] = `
     </div>
      
     <div
-      class="rounded-md w-full md:w-2/5 my-2"
+      class="rounded-md w-full md:w-2/5 mt-20 md:my-2"
     >
       <div
         class="clearfix flex items-end "
@@ -2244,10 +2244,10 @@ exports[`Module tests Index Set 'to' 1`] = `
     Can you help me to move my stuff?
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-left"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral left"
             />
             
   Click to copy!
@@ -2343,10 +2343,10 @@ exports[`Module tests Index Set 'to' 1`] = `
     How should i respond hmm...
     
           <div
-            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary tooltip-right"
           >
             <span
-              class="triangle absolute transition duration-300 neutral"
+              class="triangle absolute transition duration-300 neutral right"
             />
             
   Click to copy!
