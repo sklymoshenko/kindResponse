@@ -12,6 +12,11 @@ export interface Parametrs {
   entries?: UrlEntry
 };
 
+export interface Respond {
+  message: string,
+  subtitle: string
+}
+
 export interface Category {
   name: string,
   url: string,
@@ -27,12 +32,12 @@ export interface IAvatar {
   create(): string
 }
 export interface IFetcher {
-  fetch(): Promise<Category[] | string>;
+  fetch(options?: RequestInit): Promise<Category[] | Respond>;
 };
 
 export interface ICategoriesFetcher extends IFetcher {
   get(): Promise<Category[]>;
 }
 export interface IRespondFetcher extends IFetcher {
-  get(): Promise<string>;
+  get(): Promise<Respond>;
 }

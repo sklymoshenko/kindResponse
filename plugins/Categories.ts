@@ -8,10 +8,14 @@ class CategoryFetcher extends Fetcher implements ICategoriesFetcher {
   }
 
   async get(): Promise<Category[]> {
-    const response = await fetch(this.url);
-    const data = await response.json();
-    const categories = this.filterFromToCategories(data);
-    return categories;
+    try {
+      const data = await super.fetch();
+      if (!Array.isArray(data)) return [];
+      const categories = this.filterFromToCategories(data);
+      return categories;
+    } catch (err) {
+      throw new TypeError(err);
+    }
   }
 
   private filterFromToCategories(categories: Category[]): Category[] {

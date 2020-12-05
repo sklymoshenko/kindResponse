@@ -1,4 +1,4 @@
-import { Parametrs, Category, IFetcher } from "@/interfaces/BaseInterfaces.ts";
+import { Parametrs, Category, IFetcher, Respond } from "@/interfaces/BaseInterfaces.ts";
 import { mapRoute } from "@/plugins/mappers.ts";
 
 class Fetcher implements IFetcher {
@@ -15,10 +15,14 @@ class Fetcher implements IFetcher {
     this.url = `${this.mainUrl}${this.mappedRoute}`;
   }
 
-  async fetch(): Promise<Category[] | string> {
-    const response = await fetch(this.url);
-    const data = await response.json();
-    return data;
+  async fetch(options: RequestInit = { method: "GET" }): Promise<Category[] | Respond> {
+    try {
+      const response = await fetch(this.url, options);
+      const data = await response.json();
+      return data;
+    } catch (err) {
+      throw new TypeError(err);
+    }
   }
 };
 

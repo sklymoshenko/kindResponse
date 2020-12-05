@@ -37,6 +37,24 @@ describe("Module tests", () => {
       expect(wrapper.element).toMatchSnapshot();
       await wrapper.vm.randomIntegerBetween(3, 1);
       expect(wrapper.element).toMatchSnapshot();
+      await wrapper.vm.randomIntegerBetween("3", "1");
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("Get response renders correctly", async() => {
+      await wrapper.vm.getResponse();
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("renders correctly with selectedDefault", async() => {
+      await wrapper.vm.selectDefault();
+      expect(wrapper.element).toMatchSnapshot();
+      await wrapper.vm.selectDefault(fetchedOptions);
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("renders correctly after select a category", async() => {
+      await wrapper.vm.selectCategory();
+      expect(wrapper.element).toMatchSnapshot();
+      await wrapper.vm.selectCategory(fetchedOptions[0], fetchedOptions);
+      expect(wrapper.element).toMatchSnapshot();
     });
   });
 });

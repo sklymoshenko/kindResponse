@@ -9,7 +9,8 @@
       v-bind="$props"
       :class="`focus:outline-none focus:border-secondary transition-colors duration-500 block w-full sm:text-lg rounded-sm font-primary bg-pink-inside ${textInputClasses}`"
       :placeholder="placeholder"
-      autocomplete="chrome-off"
+      autofill="off"
+      autocomplete="off"
       @option:select="optionSelected"
       @input="handleInputChange"
     >

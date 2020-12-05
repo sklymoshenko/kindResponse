@@ -14,6 +14,7 @@ import BaseTooltip from "@/components/Base/BaseTooltip.vue";
 import { mockFetchedCategories } from "@/test/mocks.ts";
 const { fetchedOptions } = mockFetchedCategories();
 
+const mockClipboard = jest.fn(x => x);
 // Mock clibboard for jest
 window.__defineGetter__("navigator", function() {
   return {
@@ -31,16 +32,13 @@ describe("Snapshot tests", () => {
   describe("Get Started", () => {
     fetch.mockResponse(JSON.stringify(fetchedOptions));
     const wrapper = mount(GetStarted, { localVue });
-    test("Should create a vue instance", async() => {
-      await wrapper.vm.fetchCategories();
+    test("Should create a vue instance", () => {
       expect(wrapper.vm).toBeTruthy();
     });
-    test("Renders correctly", async() => {
-      await wrapper.vm.fetchCategories();
+    test("Renders correctly", () => {
       expect(wrapper.element).toMatchSnapshot();
     });
-    test("Shows selected category", async() => {
-      await wrapper.vm.fetchCategories();
+    test("Shows selected category", () => {
       wrapper.vm.selectCategory(fetchedOptions);
       expect(wrapper.element).toMatchSnapshot();
     });
@@ -50,6 +48,14 @@ describe("Snapshot tests", () => {
     });
     test("Emitted 'from' change", async() => {
       await wrapper.vm.handleFromChange();
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("Emitted 'response:get'", async() => {
+      await wrapper.vm.getResponse();
+      expect(wrapper.element).toMatchSnapshot();
+    });
+    test("Emitted 'category:select'", async() => {
+      await wrapper.vm.getResponse();
       expect(wrapper.element).toMatchSnapshot();
     });
   });

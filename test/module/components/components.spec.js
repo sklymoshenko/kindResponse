@@ -35,30 +35,17 @@ describe("Module tests", () => {
       fetch.mockResponse(JSON.stringify(fetchedOptions));
       wrapper = mount(GetStarted);
     });
-    test("Should create a a vue instance", async() => {
-      await wrapper.vm.fetchCategories();
+    test("Should create a a vue instance", () => {
       expect(wrapper.vm).toBeTruthy();
     });
-    test("Fetch categories on load", async() => {
-      await wrapper.vm.fetchCategories();
-      expect(wrapper.vm.selectOptions).toHaveLength(2);
+    test("Emit 'category:selected'", async() => {
+      await wrapper.vm.selectCategory(fetchedOptions[0]);
+      expect(wrapper.emitted()["category:selected"]).toBeTruthy();
+      expect(wrapper.emitted()["category:selected"][0][0]).toEqual(fetchedOptions[0]);
     });
-    test("Dont set default if no options", async() => {
-      const { fetchedOptions } = mockFetchedCategories();
-      await wrapper.setData({ selectOptions: fetchedOptions });
-      expect(wrapper.vm.selectOptions).toHaveLength(fetchedOptions.length);
-      expect(wrapper.vm.selectOptions).toEqual(fetchedOptions);
-    });
-    test("Dont set selected by input if no options", async() => {
-      const { fetchedOptions } = mockFetchedCategories();
-      await wrapper.setData({ selectOptions: fetchedOptions });
-      await wrapper.vm.selectCategory();
-      expect(wrapper.vm.selectOptions).toHaveLength(fetchedOptions.length);
-      expect(wrapper.vm.selectOptions).toEqual(fetchedOptions);
-    });
-    test("Set 'selected' true for one, other are false", async() => {
-      await wrapper.vm.selectCategory(fetchedOptions[1], wrapper.vm.selectOptions);
-      expect(wrapper.vm.selectOptions[1].selected).toBe(true);
+    test("Emit 'response:get'", async() => {
+      await wrapper.vm.getResponse();
+      expect(wrapper.emitted()["response:get"]).toBeTruthy();
     });
     test("'From' handler returns event data", async() => {
       const from = "Kate";

@@ -7,5 +7,9 @@ export const mockFetchedCategories = () => {
       fields: [{ field: "from", name: "name" }]
     }
   ];
-  return { fetchedOptions };
+  const fetchedRespond = {
+    message: "Hmmm",
+    subtitle: "Me"
+  };
+  return { fetchedOptions, fetchedRespond };
 };

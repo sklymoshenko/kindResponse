@@ -7,7 +7,12 @@
       @mouseleave="showTooltip = false"
       @click="copy"
     >
-      {{ text }}
+      <p v-if="!loadingStatus">
+        {{ text }}
+      </p>
+      <p v-else>
+        Thinking...
+      </p>
       <BaseTooltip :text="tooltipInfo" :show="showTooltip" :state="tooltipState" :side="side" />
     </div>
   </div>
@@ -37,6 +42,9 @@ export default class BaseBuble extends Vue {
   @Prop({ type: String, default: Side.LEFT })
   side!: string;
 
+  @Prop({ type: Boolean, default: false })
+  loading!: boolean;
+
   showTooltip: boolean = false;
   tooltipInfo: string = "Click to copy!";
   tooltipState: string = State.NEUTRAL;
@@ -53,6 +61,10 @@ export default class BaseBuble extends Vue {
     const AvatarSVG = new Avatar(this.name);
     const svg = AvatarSVG.create();
     return svg;
+  }
+
+  get loadingStatus(): boolean {
+    return this.loading;
   }
 
   @Emit("text:copy")
