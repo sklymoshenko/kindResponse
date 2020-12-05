@@ -1,16 +1,15 @@
-import Avatar from "~/plugins/Avatar";
-
 export interface ComponentsMap {
   text: string,
   select: string
 }
 
+export interface UrlEntry {
+  from: string;
+  name: string;
+}
 export interface Parametrs {
   baseUrl: string;
-  from?: string;
-  to?: string;
-  tool?: string;
-  company?: string;
+  entries?: UrlEntry
 };
 
 export interface Category {
@@ -26,4 +25,14 @@ export interface Field {
 
 export interface IAvatar {
   create(): string
+}
+export interface IFetcher {
+  fetch(): Promise<Category[] | string>;
+};
+
+export interface ICategoriesFetcher extends IFetcher {
+  get(): Promise<Category[]>;
+}
+export interface IRespondFetcher extends IFetcher {
+  get(): Promise<string>;
 }

@@ -21,6 +21,7 @@ module.exports = {
     "no-unused-vars": "warn",
     "no-undef": "off",
     "comma-dangle": "off",
-    "space-before-function-paren": [1, "never"]
+    "space-before-function-paren": [1, "never"],
+    curly: ["error", "multi-line"]
   }
 }
