@@ -9,10 +9,12 @@ module.exports = {
     colors: {
       primary: "#3f3e56",
       secondary: "#6c63ff",
-      shade: "#d0cde1",
       danger: "#f66584",
+      success: "#1fa73cd1",
+      shade: "#d0cde1",
       "primary-hovered": "#3f3e56",
-      "secondary-hovered": "#6c63ffd6",
+      "secondary-hovered": "#483dfb",
+      "danger-hovered": "#f75275",
       pink: "#f8f1f4cf",
       "pink-inside": "#faedf238",
       white: "#fff"

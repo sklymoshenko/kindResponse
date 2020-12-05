@@ -1,11 +1,14 @@
 import { mount, createLocalVue } from "@vue/test-utils";
 
 import BlurClosing from "@/directives/blurClosing.ts";
+import { State } from "@/enums/enums.ts";
 
 import GetStarted from "@/components/GetStarted.vue";
 import MainTitle from "@/components/MainTitle.vue";
 import BaseAttribute from "@/components/Base/BaseAttribute.vue";
 import BaseSelect from "@/components/Base/BaseSelect.vue";
+import BaseBubble from "@/components/Base/BaseBubble.vue";
+import BaseTooltip from "@/components/Base/BaseTooltip.vue";
 
 import { mockFetchedCategories } from "@/test/mocks.ts";
 const { fetchedOptions } = mockFetchedCategories();
@@ -106,6 +109,47 @@ describe("Snapshot tests", () => {
         const option = wrapper.find("li#listbox-item-0");
         await option.trigger("click");
         await wrapper.vm.$nextTick();
+        expect(wrapper.element).toMatchSnapshot();
+      });
+    });
+    describe("Bubble", () => {
+      const wrapper = mount(BaseBubble, { localVue });
+      test("Should create a a vue instance", () => {
+        expect(wrapper.vm).toBeTruthy();
+      });
+      test("Renders correctly", () => {
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Match after bubble mouseover", async() => {
+        const bubble = wrapper.find(".bubble");
+        await bubble.trigger("mouseover");
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Match after bubble mouseleave", async() => {
+        const bubble = wrapper.find(".bubble");
+        await bubble.trigger("mouseleave");
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Match after bubble click", async() => {
+        const bubble = wrapper.find(".bubble");
+        await bubble.trigger("click");
+        expect(wrapper.element).toMatchSnapshot();
+      });
+    });
+    describe("Tooltip", () => {
+      const wrapper = mount(BaseTooltip, { localVue });
+      test("Should create a a vue instance", () => {
+        expect(wrapper.vm).toBeTruthy();
+      });
+      test("Renders correctly", () => {
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Set show to true", async() => {
+        await wrapper.setProps({ show: true });
+        expect(wrapper.element).toMatchSnapshot();
+      });
+      test("Set state to success", async() => {
+        await wrapper.setProps({ show: true, state: State.SUCCESS });
         expect(wrapper.element).toMatchSnapshot();
       });
     });

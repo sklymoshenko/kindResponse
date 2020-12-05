@@ -270,6 +270,410 @@ exports[`Snapshot tests Base components Attribute Select options 1`] = `
 </div>
 `;
 
+exports[`Snapshot tests Base components Bubble Match after bubble click 1`] = `
+<div
+  class="clearfix flex items-end "
+>
+  <span
+    class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white"
+  >
+    <svg
+      shape-rendering="crispEdges"
+      style="isolation:isolate"
+      version="1.1"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M8 15v1H4v1H3v3h14v-3h-1v-1h-4v-1h3v-1h1v-1h1v-3h1V7h-1V4h-1V3h-1V2H5v1H4v1H3v3H2v3h1v3h1v1h1v1h3z"
+        fill="#FFDBAC"
+      />
+      <path
+        d="M5 15v-1H4v-1H3v-3H2V7h1V4h1V3h1V2h10v1h1v1h1v3h1v3h-1v3h-1v1h-1v1H5z"
+        fill="#FFF"
+        fill-opacity=".1"
+      />
+      <path
+        d="M6 8h1v1H6V8zm7 0h1v1h-1V8z"
+        fill="#FFF"
+      />
+      <path
+        d="M7 8h1v1H7V8zm5 0h1v1h-1V8z"
+        fill="#588387"
+      />
+      <path
+        d="M4 7V6h1V5h1v1H5v1H4zm10-2h1v1h1v1h-1V6h-1V5z"
+        fill="#000000"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M7 12v1h1v1h4v-1H8v-1H7z"
+        fill="#d29985"
+      />
+      <path
+        d="M4 8H3V7h1V6h5v1h2V6h5v1h1v1h-1v2h-5V8H9v2H4V8zm1 0V7h3v2H5V8zm7-1v2h3V7h-3z"
+        fill="#5f705c"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M5 7h3v2H5V7zm7 0h3v2h-3V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M14 7h1v1h-1V7zM7 7h1v1H7V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 8V7h1v1H3zm6-1v1h2V7H9zm7 0v1h1V7h-1z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 20v-3h1v-1h3v-1h1v1h1v1h2v-1h1v-1h1v1h3v1h1v3H3z"
+        fill="#1b85b8"
+      />
+      <path
+        d="M6 16H4v1H3v3h6v-2H8v-1H6v-1zm2 0h1-1zm3 0h1-1zm2 0h1v1h-2v1h-1v2h6v-3h-1v-1h-3z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 7h1V5h2V3h8v1h1v1h1v2h1V3h-2V2h-2V1h-1v1h-2V1H9v1H8V1H7v1H5v1H4v1H3v3z"
+        fill="#090806"
+      />
+    </svg>
+  </span>
+   
+  <div
+    class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
+  >
+    
+    How are you ?
+    
+    <div
+      class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-success"
+    >
+      <span
+        class="triangle absolute transition duration-300 success"
+      />
+      
+  Copied!
+
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot tests Base components Bubble Match after bubble mouseleave 1`] = `
+<div
+  class="clearfix flex items-end "
+>
+  <span
+    class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white"
+  >
+    <svg
+      shape-rendering="crispEdges"
+      style="isolation:isolate"
+      version="1.1"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M8 15v1H4v1H3v3h14v-3h-1v-1h-4v-1h3v-1h1v-1h1v-3h1V7h-1V4h-1V3h-1V2H5v1H4v1H3v3H2v3h1v3h1v1h1v1h3z"
+        fill="#FFDBAC"
+      />
+      <path
+        d="M5 15v-1H4v-1H3v-3H2V7h1V4h1V3h1V2h10v1h1v1h1v3h1v3h-1v3h-1v1h-1v1H5z"
+        fill="#FFF"
+        fill-opacity=".1"
+      />
+      <path
+        d="M6 8h1v1H6V8zm7 0h1v1h-1V8z"
+        fill="#FFF"
+      />
+      <path
+        d="M7 8h1v1H7V8zm5 0h1v1h-1V8z"
+        fill="#588387"
+      />
+      <path
+        d="M4 7V6h1V5h1v1H5v1H4zm10-2h1v1h1v1h-1V6h-1V5z"
+        fill="#000000"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M7 12v1h1v1h4v-1H8v-1H7z"
+        fill="#d29985"
+      />
+      <path
+        d="M4 8H3V7h1V6h5v1h2V6h5v1h1v1h-1v2h-5V8H9v2H4V8zm1 0V7h3v2H5V8zm7-1v2h3V7h-3z"
+        fill="#5f705c"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M5 7h3v2H5V7zm7 0h3v2h-3V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M14 7h1v1h-1V7zM7 7h1v1H7V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 8V7h1v1H3zm6-1v1h2V7H9zm7 0v1h1V7h-1z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 20v-3h1v-1h3v-1h1v1h1v1h2v-1h1v-1h1v1h3v1h1v3H3z"
+        fill="#1b85b8"
+      />
+      <path
+        d="M6 16H4v1H3v3h6v-2H8v-1H6v-1zm2 0h1-1zm3 0h1-1zm2 0h1v1h-2v1h-1v2h6v-3h-1v-1h-3z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 7h1V5h2V3h8v1h1v1h1v2h1V3h-2V2h-2V1h-1v1h-2V1H9v1H8V1H7v1H5v1H4v1H3v3z"
+        fill="#090806"
+      />
+    </svg>
+  </span>
+   
+  <div
+    class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
+  >
+    
+    How are you ?
+    
+    <div
+      class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+    >
+      <span
+        class="triangle absolute transition duration-300 neutral"
+      />
+      
+  Click to copy!
+
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot tests Base components Bubble Match after bubble mouseover 1`] = `
+<div
+  class="clearfix flex items-end "
+>
+  <span
+    class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white"
+  >
+    <svg
+      shape-rendering="crispEdges"
+      style="isolation:isolate"
+      version="1.1"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M8 15v1H4v1H3v3h14v-3h-1v-1h-4v-1h3v-1h1v-1h1v-3h1V7h-1V4h-1V3h-1V2H5v1H4v1H3v3H2v3h1v3h1v1h1v1h3z"
+        fill="#FFDBAC"
+      />
+      <path
+        d="M5 15v-1H4v-1H3v-3H2V7h1V4h1V3h1V2h10v1h1v1h1v3h1v3h-1v3h-1v1h-1v1H5z"
+        fill="#FFF"
+        fill-opacity=".1"
+      />
+      <path
+        d="M6 8h1v1H6V8zm7 0h1v1h-1V8z"
+        fill="#FFF"
+      />
+      <path
+        d="M7 8h1v1H7V8zm5 0h1v1h-1V8z"
+        fill="#588387"
+      />
+      <path
+        d="M4 7V6h1V5h1v1H5v1H4zm10-2h1v1h1v1h-1V6h-1V5z"
+        fill="#000000"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M7 12v1h1v1h4v-1H8v-1H7z"
+        fill="#d29985"
+      />
+      <path
+        d="M4 8H3V7h1V6h5v1h2V6h5v1h1v1h-1v2h-5V8H9v2H4V8zm1 0V7h3v2H5V8zm7-1v2h3V7h-3z"
+        fill="#5f705c"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M5 7h3v2H5V7zm7 0h3v2h-3V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M14 7h1v1h-1V7zM7 7h1v1H7V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 8V7h1v1H3zm6-1v1h2V7H9zm7 0v1h1V7h-1z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 20v-3h1v-1h3v-1h1v1h1v1h2v-1h1v-1h1v1h3v1h1v3H3z"
+        fill="#1b85b8"
+      />
+      <path
+        d="M6 16H4v1H3v3h6v-2H8v-1H6v-1zm2 0h1-1zm3 0h1-1zm2 0h1v1h-2v1h-1v2h6v-3h-1v-1h-3z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 7h1V5h2V3h8v1h1v1h1v2h1V3h-2V2h-2V1h-1v1h-2V1H9v1H8V1H7v1H5v1H4v1H3v3z"
+        fill="#090806"
+      />
+    </svg>
+  </span>
+   
+  <div
+    class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
+  >
+    
+    How are you ?
+    
+    <div
+      class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip block bg-primary"
+    >
+      <span
+        class="triangle absolute transition duration-300 neutral"
+      />
+      
+  Click to copy!
+
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Snapshot tests Base components Bubble Renders correctly 1`] = `
+<div
+  class="clearfix flex items-end "
+>
+  <span
+    class="inline-block h-12 w-12 md:h-16 md:w-16 rounded-full ring-2 ring-white"
+  >
+    <svg
+      shape-rendering="crispEdges"
+      style="isolation:isolate"
+      version="1.1"
+      viewBox="0 0 20 20"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <path
+        d="M8 15v1H4v1H3v3h14v-3h-1v-1h-4v-1h3v-1h1v-1h1v-3h1V7h-1V4h-1V3h-1V2H5v1H4v1H3v3H2v3h1v3h1v1h1v1h3z"
+        fill="#FFDBAC"
+      />
+      <path
+        d="M5 15v-1H4v-1H3v-3H2V7h1V4h1V3h1V2h10v1h1v1h1v3h1v3h-1v3h-1v1h-1v1H5z"
+        fill="#FFF"
+        fill-opacity=".1"
+      />
+      <path
+        d="M6 8h1v1H6V8zm7 0h1v1h-1V8z"
+        fill="#FFF"
+      />
+      <path
+        d="M7 8h1v1H7V8zm5 0h1v1h-1V8z"
+        fill="#588387"
+      />
+      <path
+        d="M4 7V6h1V5h1v1H5v1H4zm10-2h1v1h1v1h-1V6h-1V5z"
+        fill="#000000"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M7 12v1h1v1h4v-1H8v-1H7z"
+        fill="#d29985"
+      />
+      <path
+        d="M4 8H3V7h1V6h5v1h2V6h5v1h1v1h-1v2h-5V8H9v2H4V8zm1 0V7h3v2H5V8zm7-1v2h3V7h-3z"
+        fill="#5f705c"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M5 7h3v2H5V7zm7 0h3v2h-3V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M14 7h1v1h-1V7zM7 7h1v1H7V7z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 8V7h1v1H3zm6-1v1h2V7H9zm7 0v1h1V7h-1z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 20v-3h1v-1h3v-1h1v1h1v1h2v-1h1v-1h1v1h3v1h1v3H3z"
+        fill="#1b85b8"
+      />
+      <path
+        d="M6 16H4v1H3v3h6v-2H8v-1H6v-1zm2 0h1-1zm3 0h1-1zm2 0h1v1h-2v1h-1v2h6v-3h-1v-1h-3z"
+        fill="#FFF"
+        fill-opacity=".2"
+        fill-rule="evenodd"
+      />
+      <path
+        d="M3 7h1V5h2V3h8v1h1v1h1v2h1V3h-2V2h-2V1h-1v1h-2V1H9v1H8V1H7v1H5v1H4v1H3v3z"
+        fill="#090806"
+      />
+    </svg>
+  </span>
+   
+  <div
+    class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
+  >
+    
+    How are you ?
+    
+    <div
+      class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+    >
+      <span
+        class="triangle absolute transition duration-300 neutral"
+      />
+      
+  Click to copy!
+
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Snapshot tests Base components Select Click on option change selected 1`] = `
 <div>
   <button
@@ -567,6 +971,45 @@ exports[`Snapshot tests Base components Select openDropDown => toggle showDropDo
       </li>
     </ul>
   </div>
+</div>
+`;
+
+exports[`Snapshot tests Base components Tooltip Renders correctly 1`] = `
+<div
+  class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+>
+  <span
+    class="triangle absolute transition duration-300 neutral"
+  />
+  
+  Tooltip
+
+</div>
+`;
+
+exports[`Snapshot tests Base components Tooltip Set show to true 1`] = `
+<div
+  class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip block bg-primary"
+>
+  <span
+    class="triangle absolute transition duration-300 neutral"
+  />
+  
+  Tooltip
+
+</div>
+`;
+
+exports[`Snapshot tests Base components Tooltip Set state to success 1`] = `
+<div
+  class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip block bg-success"
+>
+  <span
+    class="triangle absolute transition duration-300 success"
+  />
+  
+  Tooltip
+
 </div>
 `;
 

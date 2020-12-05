@@ -332,11 +332,21 @@ exports[`Module tests Index Randon questions with different input  1`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     Can you help me to move my stuff?
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
        
@@ -421,11 +431,21 @@ exports[`Module tests Index Randon questions with different input  1`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-danger md:hover:bg-danger-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     How should i respond hmm...
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
     </div>
@@ -783,11 +803,21 @@ exports[`Module tests Index Randon questions with different input  2`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     Can you help me to move my stuff?
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
        
@@ -872,11 +902,21 @@ exports[`Module tests Index Randon questions with different input  2`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-danger md:hover:bg-danger-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     How should i respond hmm...
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
     </div>
@@ -1234,11 +1274,21 @@ exports[`Module tests Index Renders correctly 1`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     Can you help me to move my stuff?
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
        
@@ -1323,11 +1373,21 @@ exports[`Module tests Index Renders correctly 1`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-danger md:hover:bg-danger-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     How should i respond hmm...
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
     </div>
@@ -1685,11 +1745,21 @@ exports[`Module tests Index Set 'from' 1`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     Can you help me to move my stuff?
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
        
@@ -1784,11 +1854,21 @@ exports[`Module tests Index Set 'from' 1`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-danger md:hover:bg-danger-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     How should i respond hmm...
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
     </div>
@@ -2158,11 +2238,21 @@ exports[`Module tests Index Set 'to' 1`] = `
         </span>
          
         <div
-          class="bg-secondary w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-secondary md:hover:bg-secondary-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     Can you help me to move my stuff?
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
        
@@ -2247,11 +2337,21 @@ exports[`Module tests Index Set 'to' 1`] = `
         </span>
          
         <div
-          class="bg-danger w-1/2 mt-2 mb-8 p-2 rounded-lg text-white"
+          class="bubble bg-danger md:hover:bg-danger-hovered w-1/2 mt-2 mb-8 p-2 rounded-lg text-white shadow-lg cursor-pointer transform hover:scale-105 transition duration-200 relative"
         >
           
     How should i respond hmm...
-  
+    
+          <div
+            class=" w-24 text-white text-center p-1 rounded-lg top-0 text-xs absolute transition duration-300 tooltip hidden bg-primary"
+          >
+            <span
+              class="triangle absolute transition duration-300 neutral"
+            />
+            
+  Click to copy!
+
+          </div>
         </div>
       </div>
     </div>
