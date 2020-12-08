@@ -2499,6 +2499,7 @@ exports[`Snapshot tests Main Title Renders correctly 1`] = `
   >
     <p
       class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+      title="Kind responses for everybody"
     >
       
       Kind responses for everybody

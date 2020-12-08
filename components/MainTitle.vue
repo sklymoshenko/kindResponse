@@ -1,8 +1,8 @@
 <template>
   <span class="flex flex-col justify-center items-center mt-24 md:mb-8">
     <span class="flex items-end">
-      <p class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1">
-        Kind responses for everybody
+      <p class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1" :title="text">
+        {{ text }}
       </p>
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -21,11 +21,11 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue";
-
-export default Vue.extend({
-  name: "MainTitle"
-});
+import { Component, Vue } from "nuxt-property-decorator";
+@Component
+export default class MainTitle extends Vue {
+  text: string = "Kind responses for everybody";
+};
 </script>
 
 <style></style>

@@ -12,6 +12,7 @@ exports[`Module tests Index Get response renders correctly 1`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -463,18 +464,21 @@ exports[`Module tests Index Get response renders correctly 1`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -492,6 +496,7 @@ exports[`Module tests Index Randon questions with different input  1`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -943,18 +948,21 @@ exports[`Module tests Index Randon questions with different input  1`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -972,6 +980,7 @@ exports[`Module tests Index Randon questions with different input  2`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -1423,18 +1432,21 @@ exports[`Module tests Index Randon questions with different input  2`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -1452,6 +1464,7 @@ exports[`Module tests Index Randon questions with different input  3`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -1903,18 +1916,21 @@ exports[`Module tests Index Randon questions with different input  3`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -1932,6 +1948,7 @@ exports[`Module tests Index Renders correctly 1`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -2383,18 +2400,21 @@ exports[`Module tests Index Renders correctly 1`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -2412,6 +2432,7 @@ exports[`Module tests Index Set 'from' 1`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -2873,18 +2894,21 @@ exports[`Module tests Index Set 'from' 1`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -2902,6 +2926,7 @@ exports[`Module tests Index Set 'to' 1`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -3365,18 +3390,21 @@ exports[`Module tests Index Set 'to' 1`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -3394,6 +3422,7 @@ exports[`Module tests Index renders correctly after select a category 1`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -3845,18 +3874,21 @@ exports[`Module tests Index renders correctly after select a category 1`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -3874,6 +3906,7 @@ exports[`Module tests Index renders correctly after select a category 2`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -4325,18 +4358,21 @@ exports[`Module tests Index renders correctly after select a category 2`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -4354,6 +4390,7 @@ exports[`Module tests Index renders correctly with selectedDefault 1`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -4805,18 +4842,21 @@ exports[`Module tests Index renders correctly with selectedDefault 1`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
@@ -4834,6 +4874,7 @@ exports[`Module tests Index renders correctly with selectedDefault 2`] = `
     >
       <p
         class="title-test font-titles font-bold capitalize sm:text-lg md:text-2xl mr-1"
+        title="Kind responses for everybody"
       >
         
       Kind responses for everybody
@@ -5285,18 +5326,21 @@ exports[`Module tests Index renders correctly with selectedDefault 2`] = `
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 left-1 md:top-2 md:left-3"
+    loading="lazy"
     src="../static/undraw_conversation_h12g.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 absolute top-2 right-1 md:top-2 md:right-5"
+    loading="lazy"
     src="../static/undraw_super_thank_you_obwk.svg"
   />
    
   <img
     alt="#"
     class="backround-image w-6/12 md:w-3/12 hidden md:block absolute bottom-2 right-4 md:bottom-2 md:right-15"
+    loading="lazy"
     src="../static/undraw_share_opinion_jpw0.svg"
   />
 </div>
